@@ -42,6 +42,19 @@ Esta métrica define la geometría intrínseca de nuestro universo en este model
 ### 3.1. El Grupo de Rotación SO(4) y su Descomposición
 
 Las rotaciones en 4D son descritas por el grupo de Lie SO(4). A diferencia de las rotaciones en 3D (SO(3)), que siempre tienen un único eje fijo, las rotaciones en 4D son más complejas y poseen 6 grados de libertad.
+Estos 6 grados de libertad corresponden a las rotaciones en los 6 planos coordenados de ℝ⁴, y sus generadores infinitesimales son:
+
+$$
+\begin{cases}
+\text{Plano } xy: \quad L_{xy} = x\partial_y - y\partial_x \\
+\text{Plano } xz: \quad L_{xz} = x\partial_z - z\partial_x \\
+\text{Plano } xw: \quad L_{xw} = x\partial_w - w\partial_x \\
+\text{Plano } yz: \quad L_{yz} = y\partial_z - z\partial_y \\
+\text{Plano } yw: \quad L_{yw} = y\partial_w - w\partial_y \\
+\text{Plano } zw: \quad L_{zw} = z\partial_w - w\partial_z \\
+\end{cases}
+$$
+
 
 La propiedad matemática que fundamenta esta conjetura es el isomorfismo del álgebra de Lie de SO(4):
 
