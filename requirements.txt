@@ -1,0 +1,10 @@
+jupyter
+numpy
+matplotlib
+scipy
+pandas
+plotly
+sympy
+astropy
+seaborn
+ipywidgets

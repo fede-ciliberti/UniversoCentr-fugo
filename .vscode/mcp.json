@@ -1,0 +1,11 @@
+{
+    "servers": {
+        "WolframAlphaServer": {
+            "type": "stdio",
+            "command": "./.venv/bin/python",
+            "args": [
+                "mcp-wolfram/src/core/server.py"
+            ]
+        }
+    }
+}

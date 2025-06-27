@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "WolframAlphaServer": {
+      "type": "stdio",
+      "command": "/home/fciliberti/Lab/UniversoCentrífugo/.venv/bin/python",
+      "args": [
+        "/home/fciliberti/Lab/UniversoCentrífugo/mcp-wolfram/src/core/server.py"
+      ],
+      "env": {
+        "WOLFRAM_API_KEY": "GHQ6Y2-QJGK3HKYWQ"
+      },
+      "alwaysAllow": [
+        "query_wolfram",
+        "query"
+      ]
+    },
+    "sequentialthinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "disabled": true,
+      "alwaysAllow": []
+    }
+  }
+}

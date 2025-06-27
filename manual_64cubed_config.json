@@ -1,0 +1,15 @@
+{
+  "system_type": "custom_64cubed",
+  "resolution": 64,
+  "grid_size": 64,
+  "domain_size": 20.0,
+  "dt": 0.008,
+  "t_final": 1.5,
+  "n_steps": 187,
+  "output_every": 10,
+  "checkpoint_every": 25,
+  "estimated_time_minutes": 80,
+  "estimated_memory_gb": 0.1,
+  "R_param": 1.0,
+  "omega_4d_param": 0.1
+}
