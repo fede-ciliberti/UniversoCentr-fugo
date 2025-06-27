@@ -10,7 +10,7 @@
 
 **El universo observable sería una manifestación tridimensional de una estructura hiperdimensional rotante, donde la expansión cosmológica emerge como proyección de movimiento rotacional en dimensiones superiores.**
 
-Se propone que el inicio del universo "big bang" sería el colapso de una masa de materia rotante sobre una singularidad. Por motivos aún desconocidos, toda la materia/energía existente en esa región del espacio escaparía de la 3-esfera original a traves de una 4ta dimensión espacial hacia un nuevo espacio tridimensional, manteniendo la rotación inicial y distribuyendo la energia en ese nuevo espacio.
+Se postula que el "Big Bang" se origina por el colapso de una masa de materia/energía en rotación hacia una singularidad. Tras este colapso, la totalidad de la materia/energía se trasladaría a una nueva coordenada dentro de una cuarta dimensión espacial, conservando su momento angular. Este desplazamiento daría origen a nuestro universo tridimensional observable (una 3-esfera), donde la energía y la rotación iniciales se redistribuyen, impulsando la expansión cósmica.
 
 Nos estaría haciendo falta poder definir matemáticamente como una rotación en 3D se proyecta a una rotación en 4D, y cómo esa rotación en 4D se relaciona con la expansión del universo observable.
 
