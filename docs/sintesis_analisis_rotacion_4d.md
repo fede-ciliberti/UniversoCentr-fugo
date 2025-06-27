@@ -15,49 +15,47 @@ La conjetura se formaliza mediante:
 - **Proyección:** Mapeo estereográfico P: S³ → ℝ³ que genera el universo observable
 - **Expansión:** H₀ = (ω₄D · R₄D)/(2π) · f_geométrico
 
-### 2. Ecuación Fundamental
+### 2. Ecuaciones Fundamentales y Predicciones
 
+#### 2.1 Constante de Hubble y Relación Tiempo-Distancia
+
+**Predicción central:** La constante de Hubble `H₀` se deriva de los parámetros de la rotación 4D.
 ```
 H₀ = (ω₄D · R₄D)/(2π) · f_estereográfico
 ```
+Donde `ω₄D` es la velocidad angular 4D, `R₄D` es el radio de la 4-esfera y `f_estereográfico ≈ 0.5` es un factor geométrico. Para H₀ ≈ 70 km/s/Mpc, esto implica `ω₄D · R₄D ≈ 1.45 × 10⁻¹⁷ m/s`.
 
-Para H₀ ≈ 70 km/s/Mpc, esto implica:
+**Relación tiempo-distancia modificada:** A escalas cosmológicas, se predice una desviación de la linealidad estricta:
 ```
-ω₄D · R₄D ≈ 1.45 × 10⁻¹⁷ m/s
+v(r) = H₀ · r · [1 + α · (r/R₄D)²]
 ```
+Donde `α` es un parámetro de curvatura hiperdimensional medible.
 
-## Predicciones Específicas y Verificables
+#### 2.2 Anisotropías en el Fondo Cósmico de Microondas (CMB)
 
-### 3.1 Anisotropías del Fondo Cósmico de Microondas
-
-**Predicción principal:** Patrones de simetría cuádruple en las anisotropías del CMB
-
+**Patrón de rotación proyectada:** La función de correlación angular del CMB debe contener términos únicos de orden superior.
 ```
 C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
 ```
+**Eje preferencial observable:** El eje de rotación 4D se manifestaría como una dirección preferencial en el cielo con simetría cuádruple, un gradiente de temperatura específico y patrones de polarización correlacionados.
 
-Los términos cos(4θ) y cos(8θ) son firmas únicas de proyecciones de rotaciones 4D.
+#### 2.3 Variaciones Temporales de H₀
 
-### 3.2 Variaciones Temporales de H₀
+**Oscilaciones y deriva:** Si la rotación 4D no es perfectamente uniforme, se esperan variaciones temporales.
+- **Oscilaciones:** `H(t) = H₀ [1 + ε · cos(ω_perturbación · t + φ)]` con `ε ~ 10⁻⁴ - 10⁻³`.
+- **Deriva secular:** `dH₀/dt = -H₀²/ω₄D · (dω₄D/dt)` para una desaceleración gradual.
 
-**Oscilaciones características:**
-```
-H(t) = H₀ [1 + ε · cos(ω_perturbación · t + φ)]
-```
+#### 2.4 Efectos en Estructuras a Gran Escala
 
-- Amplitud esperada: ε ~ 10⁻⁴ - 10⁻³
-- Período: 10⁹ - 10¹⁰ años
+**Correlaciones y flujos:** La rotación debería inducir patrones en la distribución y movimiento de galaxias.
+- **Correlaciones direccionales:** `ξ(r, θ) = ξ₀(r) · [1 + A_rot · P₄(cos(θ))]`, donde `P₄` es el polinomio de Legendre de orden 4.
+- **Velocidades peculiares:** Un flujo coherente adicional `v_peculiar = v_4D · sin(2πr/λ_4D)`.
 
-### 3.3 Explicación de Materia y Energía Oscura
+#### 2.5 Explicación Unificada de Materia y Energía Oscura
 
-**Densidad de energía rotacional:**
-```
-ρ_rot = (1/2) · ρ_total · (v_rot/c)²
-```
-
-**Predicción cuantitativa:** ρ_rot ≈ 0.27 ρ_crítica (explicando la materia oscura observada)
-
-**Presión efectiva negativa:** La tensión rotacional proyectada genera efectos similares a energía oscura.
+**Energía y presión rotacional:** La energía cinética de la rotación 4D y la tensión resultante podrían explicar los fenómenos atribuidos a la materia y energía oscura.
+- **Densidad de energía rotacional (Materia Oscura):** `ρ_rot = (1/2) · ρ_total · (v_rot/c)²`, que se predice cuantitativamente como ~27% de la densidad crítica.
+- **Presión efectiva negativa (Energía Oscura):** `P_eff = -ρ_rot · (v_rot/c)² · f_proyección`, generando una aceleración cósmica.
 
 ## Análisis de Factibilidad Experimental
 
