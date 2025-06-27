@@ -50,6 +50,18 @@ so(4) ≅ su(2) ⊕ su(2)
 ```
 
 Esto significa que cualquier rotación infinitesimal en 4D puede descomponerse en dos "giros" independientes, cada uno gobernado por una copia del álgebra de Lie de SU(2) (el grupo del espín en mecánica cuántica). Estos giros se conocen como **rotaciones isoclínicas izquierda y derecha**.
+Esta estructura se visualiza de forma muy elegante usando el álgebra de los **cuaterniones**. Un punto en ℝ⁴ puede ser representado por un cuaternión `p`. Una rotación general de SO(4) sobre este punto se puede escribir como la transformación:
+
+```
+p' = q_L * p * q_R⁻¹
+```
+
+Donde `q_L` y `q_R` son cuaterniones unitarios (cuyo grupo es isomorfo a SU(2)).
+
+*   `q_L` (multiplicación por la izquierda) genera las rotaciones isoclínicas izquierdas.
+*   `q_R` (multiplicación por la derecha) genera las rotaciones isoclínicas derechas.
+
+Esta formulación proporciona una justificación rigurosa y una herramienta computacional poderosa para el mecanismo de rotación propuesto.
 
 ### 3.2. La Rotación Isoclínica: La Clave de la Isotropía
 
