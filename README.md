@@ -10,10 +10,32 @@
 
 > **El universo observable es una 3-esfera embebida en un espacio 4D que rota con velocidad angular ω₄D, donde la expansión cosmológica observada (Ley de Hubble) es la proyección 3D de esta rotación hiperdimensional.**
 
-### Ecuación Fundamental
+### Ecuaciones Fundamentales del Marco Teórico
 
+La hipótesis se construye mediante cuatro ecuaciones clave que conectan la rotación 4D con los fenómenos observables:
+
+#### 1. Derivación de la Ley de Hubble
+```latex
+H₀ = -ω_4D × tan(ψ)
 ```
-H₀ = (ω₄D × R₄D)/(2π) × f_geométrico
+*Donde `ψ` es el ángulo de fase actual de la rotación 4D*
+
+#### 2. Dinámica en el Hiperespacio (4-Velocidad)
+```latex
+U_z = -R×ω_4D×(sin(ψ)×cos(ω_4D×t) + sin(θ)×sin(ω_4D×t)×cos(ψ))
+U_w = R×ω_4D×(-sin(ψ)×sin(ω_4D×t) + sin(θ)×cos(ψ)×cos(ω_4D×t))
+```
+
+#### 3. Tensor Energía-Momento y Proyección 3D
+```latex
+T^αβ = m × U^α × U^β × δ(x - x_partícula)
+T_μν(efectivo) = P_μ^α × P_ν^β × T_αβ
+```
+*Donde `P_μ^α = δ_μ^α - n^α n_μ` es el operador de proyección*
+
+#### 4. Gravitación Emergente
+```latex
+G_μν(g) = 8πG × T_μν(efectivo)
 ```
 
 **Revoluciones Conceptuales:**
@@ -21,6 +43,36 @@ H₀ = (ω₄D × R₄D)/(2π) × f_geométrico
 1. **Un solo mecanismo** explica expansión acelerada, materia oscura (~27%) y energía oscura (~68%)
 2. **Predicciones falsables** verificables con tecnología actual
 3. **Elegancia matemática** que reemplaza múltiples componentes exóticos del modelo ΛCDM
+4. **Gravedad emergente** derivada de la proyección de dinámica hiperdimensional
+
+### Flujo Lógico del Marco Teórico
+
+```mermaid
+graph TD
+    A["🌀 Postulado: Rotación Isoclínica 4D<br/>Universo como 3-esfera en ℝ⁴"] --> B["📐 Cinemática 4D<br/>Cálculo de 4-Velocidad U^α"];
+    B --> C["⚡ Dinámica 4D<br/>Tensor Energía-Momento T^αβ"];
+    C --> D["📽️ Proyección Dimensional<br/>Operador P: 4D → 3D"];
+    D --> E["🔍 Tensor Observable 3D<br/>T_μν(efectivo)"];
+    A --> F["📏 Expansión Observada<br/>Ley de Hubble H₀"];
+    E --> G["🌌 Gravedad Emergente<br/>Ecuaciones de Einstein"];
+    
+    style A fill:#e1f5fe
+    style C fill:#f3e5f5
+    style E fill:#fff3e0
+    style G fill:#ffebee
+```
+
+**Interpretación:** La rotación 4D genera simultáneamente la expansión observable (vía geometría) y la gravedad (vía tensor energía-momento proyectado).
+
+### Referencias a Desarrollos Matemáticos Detallados
+
+| Ecuación | Derivación Completa | Implementación Numérica |
+|----------|---------------------|-------------------------|
+| **Ley de Hubble** | [`core_hypothesis.md:97-141`](scientific_publication/01_theoretical_foundations/core_hypothesis.md:97) | [`verify_hubble_law.py`](experimental_validation/hubble_verification/verify_hubble_law.py:1) |
+| **4-Velocidad** | [`energy_momentum_tensor.md:43-106`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:43) | [`calculate_4_velocity.py`](computational_implementation/core_calculations/calculate_4_velocity.py:1) |
+| **Tensor T^αβ** | [`energy_momentum_tensor.md:108-199`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:108) | [`calculate_stress_energy_tensor.py`](computational_implementation/core_calculations/calculate_stress_energy_tensor.py:1) |
+| **Proyección 3D** | [`energy_momentum_tensor.md:201-358`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:201) | [`calculate_projected_tensor.py`](computational_implementation/core_calculations/calculate_projected_tensor.py:1) |
+| **Einstein** | [`energy_momentum_tensor.md:360-394`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:360) | [`run_complete_simulation.py`](computational_implementation/simulations/run_complete_simulation.py:1) |
 
 ---
 

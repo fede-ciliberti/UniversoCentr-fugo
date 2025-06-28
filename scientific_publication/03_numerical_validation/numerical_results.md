@@ -1,5 +1,6 @@
 # 🎯 RESULTADOS DE SIMULACIONES EINSTEIN - CONJETURA UNIVERSO CENTRÍFUGO
-## Validación Numérica Completa (Diciembre 26, 2025)
+
+## Validación Numérica Completa
 
 ---
 
@@ -16,6 +17,7 @@
 ### 1. SIMULACIÓN 32³ (BASELINE - ALGORITMO BSSN COMPLETO)
 
 **Configuración:**
+
 - **Resolución**: 32³ = 32,768 puntos
 - **Algoritmo**: Formalismo BSSN completo (Baumgarte-Shapiro-Shibata-Nakamura)
 - **Parámetros**: R_param = 1.0, ω₄D_param = 0.1
@@ -23,6 +25,7 @@
 - **Duración real**: 6.63 minutos
 
 **Resultados:**
+
 ```
 ✅ EXPANSIÓN DETECTADA: +0.489% en det(γ)
 ✅ EVOLUCIÓN ESTABLE: Sin divergencias numéricas
@@ -30,6 +33,7 @@
 ```
 
 **Métricas clave:**
+
 - Determinante inicial: 1.00004945
 - Determinante final: 1.00494516
 - Cambio absoluto: 0.00489571
@@ -38,6 +42,7 @@
 ### 2. SIMULACIÓN 256³ (ALTA RESOLUCIÓN - ALGORITMO BSSN COMPLETO)
 
 **Configuración:**
+
 - **Resolución**: 256³ = 16,777,216 puntos
 - **Algoritmo**: Formalismo BSSN completo optimizado
 - **Parámetros**: R_param = 1.0, ω₄D_param = 0.1  
@@ -45,6 +50,7 @@
 - **Duración real**: 66.7 minutos
 
 **Resultados:**
+
 ```
 ✅ EXPANSIÓN CONFIRMADA: +0.49% en det(γ) 
 ✅ LINEALIDAD PERFECTA: R² = 0.998584
@@ -53,6 +59,7 @@
 ```
 
 **Evolución temporal detallada:**
+
 ```
 Paso   0: det(γ) = 1.00000495  (t = 0.001)
 Paso 100: det(γ) = 1.00056044  (t = 0.11)
@@ -68,6 +75,7 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 ```
 
 **Análisis de linealidad:**
+
 - Pendiente de expansión: 0.00498865
 - Coeficiente R²: 0.998584 (prácticamente perfecto)
 - Tasa de expansión: 0.00496008/unidad_tiempo
@@ -88,6 +96,7 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 ### Verificación de Estabilidad
 
 **Criterios de validación cumplidos:**
+
 1. ✅ **Sin divergencias**: Evolución suave sin inestabilidades
 2. ✅ **Conservación**: tr(K) = 0 (conservación exacta de energía-momento)
 3. ✅ **Reproducibilidad**: Resultados idénticos en re-ejecuciones
@@ -128,7 +137,8 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 ### Implementación Verificada
 
 **Ecuaciones implementadas:**
-```
+
+```latex
 ∂γ̃ᵢⱼ/∂t = -2αÃᵢⱼ + β^k∂ₖγ̃ᵢⱼ + términos_gauge + fuentes_4D
 ∂Ãᵢⱼ/∂t = evolución_curvatura_extrínseca + fuentes_rotacional
 ∂φ/∂t = -αK̃/3 + β^k∂ₖφ + términos_traza
@@ -137,6 +147,7 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 ```
 
 **Variables evolucionadas:**
+
 - γ̃ᵢⱼ: Métrica espacial conforme (6 componentes)
 - Ãᵢⱼ: Curvatura extrínseca conforme (6 componentes)  
 - φ: Factor conforme logarítmico (1 componente)
@@ -150,6 +161,7 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 ### Verificación de Implementación
 
 **Tests de validación pasados:**
+
 1. ✅ **Métrica plana**: Preservación sin fuentes
 2. ✅ **Gauge conditions**: Estabilidad del sistema coordenado
 3. ✅ **Constraint evolution**: Mantenimiento de vínculos
@@ -164,11 +176,13 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 Durante el análisis emergió una extensión natural de la conjetura:
 
 **Hipótesis**: El momento angular cósmico se conserva
-```
+
+```latex
 L₄D = I₄D × ω₄D = M_universo × R²(t) × ω₄D(t) = constante
 ```
 
 **Implicaciones:**
+
 1. **H₀ variable**: La "constante" de Hubble evoluciona temporalmente
 2. **Inflación natural**: Fuerza centrífuga inicial extrema (R pequeño → ω₄D grande)
 3. **Aceleración actual**: Residuo de fuerza centrífuga primordial
@@ -177,11 +191,13 @@ L₄D = I₄D × ω₄D = M_universo × R²(t) × ω₄D(t) = constante
 ### Principio de Superposición Cosmológico
 
 **Formulación**: La curvatura total es suma de efectos independientes
-```
+
+```latex
 Curvatura_total = Curvatura_global(rotación_4D) + Curvatura_local(masa)
 ```
 
 **Ventajas:**
+
 - Respeta la Relatividad General localmente (ley 1/r²)
 - Extiende a cosmología sin energía oscura
 - Unifica escalas local y global
@@ -260,19 +276,19 @@ La validación numérica es **completamente exitosa** según todos los criterios
 
 ## 🚀 PRÓXIMOS PASOS CIENTÍFICOS
 
-### Inmediatos (Esta semana)
+### Inmediatos
 
 1. **Simulación de gravedad local**: Implementar masa puntual sobre fondo en expansión
 2. **Serie de convergencia**: 48³ → 128³ → 512³ con algoritmo BSSN completo
 3. **Calibración observacional**: Ajustar parámetros a valores cosmológicos reales
 
-### Mediano plazo (Próximas semanas)
+### Mediano plazo
 
 1. **Análisis paramétrico**: Mapear (R₄D, ω₄D) → observables
 2. **Comparación con datos**: CMB, supernovas, BAO
 3. **Desarrollo de código**: Optimización para resoluciones superiores
 
-### Largo plazo (Próximos meses)
+### Largo plazo
 
 1. **Publicación científica**: Preparar manuscrito para revisión por pares
 2. **Colaboraciones**: Contactar grupos de relatividad numérica
@@ -283,21 +299,25 @@ La validación numérica es **completamente exitosa** según todos los criterios
 ## 📋 ARCHIVOS GENERADOS
 
 ### Datos de Simulación
+
 - `simulation_results.npz`: Resultados completos 256³ (0.4 MB)
 - `simulation_initial_data.npz`: Condiciones iniciales (1.8 MB)
 - `checkpoint_step_XXXXX.npz`: Series temporales (20 archivos)
 
 ### Análisis y Visualizaciones
+
 - `simulation_analysis.png`: Gráficos de evolución temporal
 - `evolucion_checkpoints.png`: Análisis de convergencia
 - `detailed_simulation_analysis.png`: Visualización espacial
 
 ### Herramientas de Análisis
+
 - `analyze_simulation_results.py`: Analizador técnico completo
 - `quick_analysis.py`: Análisis rápido y visualización
 - `monitor_checkpoints.py`: Monitor en tiempo real
 
 ### Documentación Técnica
+
 - `plan_verificacion_algoritmo_completo.md`: Plan de validación rigurosa
 - `comparacion_algoritmos.py`: Análisis diferencias implementaciones
 - `diagnostico_velocidad_simulacion.py`: Verificación de ejecución

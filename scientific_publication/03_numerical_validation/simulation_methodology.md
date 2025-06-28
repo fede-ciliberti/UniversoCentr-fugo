@@ -1,7 +1,5 @@
 # Plan de Verificación por Aproximaciones
 
-*Versión: 1.0 - Fecha: 26 de junio de 2025*
-
 ## 1. Objetivo
 
 Este documento detalla el plan de acción para verificar si el Tensor Energía-Momento (`T_μν`) derivado en el `plan_desarrollo_gravedad_local.md` produce una métrica compatible con la gravedad observada. Dado que la solución analítica directa es intratable, procederemos con tres enfoques de aproximación, ordenados de menor a mayor complejidad.
@@ -18,7 +16,7 @@ Este documento detalla el plan de acción para verificar si el Tensor Energía-M
 
 El promediado temporal elimina las oscilaciones de alta frecuencia debidas a la rotación 4D, revelando la estructura subyacente del tensor energía-momento. Para cada elemento del tensor proyectado `T_projected^αβ`, calculamos:
 
-```
+```latex
 ⟨T^αβ⟩ = (1/T) ∫₀ᵀ T_projected^αβ(t) dt
 ```
 
@@ -47,7 +45,7 @@ def calculate_time_averaged_tensor():
 
 **Resultado del Tensor Promediado:**
 
-```
+```latex
 Tensor T_averaged = ⟨T_projected⟩ (promedio temporal)
 
 Elementos no nulos principales:
@@ -79,15 +77,16 @@ Elementos no nulos principales:
 El tensor promediado `⟨T_μν⟩` que calculamos en el paso anterior es estático (no depende del tiempo), lo cual es un excelente primer resultado. Ahora debemos analizar su estructura espacial para ver si es compatible con una fuente de gravedad estática y esféricamente simétrica, como la que describe la métrica de Schwarzschild.
 
 La fuente para la métrica de Schwarzschild es un **fluido perfecto en reposo**, cuyo tensor energía-momento tiene una forma extremadamente simple:
-*   `T^00 = ρ` (densidad de energía)
-*   `T^ii = p` (presión isótropa)
-*   Todos los demás componentes (los términos fuera de la diagonal) son **cero**.
+
+* `T^00 = ρ` (densidad de energía)
+* `T^ii = p` (presión isótropa)
+* Todos los demás componentes (los términos fuera de la diagonal) son **cero**.
 
 **Análisis Comparativo de Nuestro `⟨T_μν⟩`:**
 
-1.  **Componentes Diagonales (Presión/Densidad):** Nuestro tensor tiene componentes diagonales no nulas, lo cual es consistente con una fuente que tiene densidad y presión. Estos términos dependen de las coordenadas angulares `ψ`, `θ`, y `φ`.
+1. **Componentes Diagonales (Presión/Densidad):** Nuestro tensor tiene componentes diagonales no nulas, lo cual es consistente con una fuente que tiene densidad y presión. Estos términos dependen de las coordenadas angulares `ψ`, `θ`, y `φ`.
 
-2.  **Componentes Fuera de la Diagonal (Tensiones/Flujos):** **Este es el punto crítico.** Nuestro tensor `⟨T_μν⟩` promediado todavía contiene componentes fuera de la diagonal que son **no nulas**. Por ejemplo, `⟨T^xy⟩ ≠ 0`. Estos términos representan flujos de momento o tensiones de cizalladura (shearing stresses).
+2. **Componentes Fuera de la Diagonal (Tensiones/Flujos):** **Este es el punto crítico.** Nuestro tensor `⟨T_μν⟩` promediado todavía contiene componentes fuera de la diagonal que son **no nulas**. Por ejemplo, `⟨T^xy⟩ ≠ 0`. Estos términos representan flujos de momento o tensiones de cizalladura (shearing stresses).
 
 **Conclusión del Análisis:**
 
@@ -97,8 +96,8 @@ Esto implica que el simple promedio temporal **no es suficiente** para recuperar
 
 **Posibles Caminos a Seguir:**
 
-*   **Averiguar sobre los ángulos:** Un paso adicional podría ser promediar el tensor no solo en el tiempo, sino también sobre todos los ángulos (`θ`, `φ`) para ver si los términos problemáticos se anulan. Esto simularía una fuente "desenfocada" o macroscópica.
-*   **Reinterpretar la solución:** Quizás la conjetura no predice exactamente la métrica de Schwarzschild, sino una métrica ligeramente diferente y no perfectamente isótropa, como la métrica de Kerr (que describe un agujero negro en rotación). Los términos fuera de la diagonal podrían estar relacionados con un momento angular intrínseco.
+* **Averiguar sobre los ángulos:** Un paso adicional podría ser promediar el tensor no solo en el tiempo, sino también sobre todos los ángulos (`θ`, `φ`) para ver si los términos problemáticos se anulan. Esto simularía una fuente "desenfocada" o macroscópica.
+* **Reinterpretar la solución:** Quizás la conjetura no predice exactamente la métrica de Schwarzschild, sino una métrica ligeramente diferente y no perfectamente isótropa, como la métrica de Kerr (que describe un agujero negro en rotación). Los términos fuera de la diagonal podrían estar relacionados con un momento angular intrínseco.
 
 Por ahora, concluimos que la **Aproximación 1** en su forma actual no logra el objetivo, y debemos proceder a la **Aproximación 2: Límite de Campo Débil**.
 
@@ -121,9 +120,10 @@ El resultado de esta linealización (usando una elección de coordenadas conveni
 **`□ h̄_μν = -16πG * T_μν`**
 
 Donde:
-*   `□` es el operador d'Alembertiano, el análogo en 4D del Laplaciano, que describe la propagación de ondas.
-*   `h̄_μν` es la "perturbación de traza inversa", una redefinición de `h_μν` que simplifica las matemáticas: `h̄_μν = h_μν - (1/2)η_μν h`.
-*   `T_μν` es nuestro tensor energía-momento. Para esta aproximación, usaremos el tensor promediado en el tiempo `⟨T_μν⟩` que calculamos en la fase anterior, ya que buscamos una solución estática.
+
+* `□` es el operador d'Alembertiano, el análogo en 4D del Laplaciano, que describe la propagación de ondas.
+* `h̄_μν` es la "perturbación de traza inversa", una redefinición de `h_μν` que simplifica las matemáticas: `h̄_μν = h_μν - (1/2)η_μν h`.
+* `T_μν` es nuestro tensor energía-momento. Para esta aproximación, usaremos el tensor promediado en el tiempo `⟨T_μν⟩` que calculamos en la fase anterior, ya que buscamos una solución estática.
 
 El objetivo del siguiente paso será resolver esta ecuación de onda para el componente `h̄_00`, que corresponde al potencial gravitacional newtoniano. Para una fuente estática, el operador `□` se reduce al Laplaciano `∇²`, y la ecuación se convierte en una Ecuación de Poisson, cuya solución es bien conocida.
 
@@ -189,9 +189,9 @@ def solve_linearized_equations():
 
 ✓ **VERIFICACIÓN EXITOSA:** La integral de energía total resulta ser una cantidad **finita y bien definida** que depende únicamente de parámetros físicos constantes:
 
-- **R⁵**: Factor geométrico relacionado con el tamaño de la fuente
-- **ω₄D²**: Factor dinámico relacionado con la velocidad de rotación 4D
-- **5π²/256**: Factor numérico puro
+* **R⁵**: Factor geométrico relacionado con el tamaño de la fuente
+* **ω₄D²**: Factor dinámico relacionado con la velocidad de rotación 4D
+* **5π²/256**: Factor numérico puro
 
 Esto significa que el potencial gravitacional a grandes distancias tiene exactamente la forma:
 
@@ -207,10 +207,10 @@ El resultado es **totalmente consistente** con el potencial gravitacional Newton
 
 **Implicaciones Físicas:**
 
-- La conjetura de rotación 4D **pasa esta prueba crucial** de consistencia física
-- El sistema rotando en 4D se comporta como una fuente gravitacional estática con masa efectiva `M_eff = 5π²R⁵ω₄D²/256`
-- A grandes distancias, un observador mediría exactamente el campo gravitacional esperado para un objeto de masa `M_eff`
-- Esto explica cómo la dinámica microscópica 4D puede generar la gravedad macroscópica observable
+* La conjetura de rotación 4D **pasa esta prueba crucial** de consistencia física
+* El sistema rotando en 4D se comporta como una fuente gravitacional estática con masa efectiva `M_eff = 5π²R⁵ω₄D²/256`
+* A grandes distancias, un observador mediría exactamente el campo gravitacional esperado para un objeto de masa `M_eff`
+* Esto explica cómo la dinámica microscópica 4D puede generar la gravedad macroscópica observable
 
 ---
 
@@ -228,11 +228,11 @@ Para realizar una simulación numérica completa, necesitamos traducir nuestro p
 
 **2. Componentes de la Simulación:**
 
-*   **Malla de Cálculo (Grid):** Definiremos una malla cartesiana 3D (`x, y, z`) que representará una porción del espacio. En cada punto de esta malla, calcularemos el valor de la métrica a lo largo del tiempo.
+* **Malla de Cálculo (Grid):** Definiremos una malla cartesiana 3D (`x, y, z`) que representará una porción del espacio. En cada punto de esta malla, calcularemos el valor de la métrica a lo largo del tiempo.
 
-*   **Datos Iniciales (Tensor `⟨T_μν⟩`):** Nuestro tensor `⟨T_μν⟩` promediado en el tiempo, que depende de las coordenadas hiperesféricas (`ψ, θ, φ`), debe ser traducido a la malla cartesiana. Necesitaremos una función que, para cada punto `(x, y, z)` de la malla, calcule las coordenadas esféricas `(r, θ, φ)` correspondientes y asigne el valor del tensor. Asumiremos que la partícula está en el origen.
+* **Datos Iniciales (Tensor `⟨T_μν⟩`):** Nuestro tensor `⟨T_μν⟩` promediado en el tiempo, que depende de las coordenadas hiperesféricas (`ψ, θ, φ`), debe ser traducido a la malla cartesiana. Necesitaremos una función que, para cada punto `(x, y, z)` de la malla, calcule las coordenadas esféricas `(r, θ, φ)` correspondientes y asigne el valor del tensor. Asumiremos que la partícula está en el origen.
 
-*   **Sistema de Evolución (Ecuaciones de Einstein):** Las ecuaciones de Einstein `G_μν = 8πG * T_μν` no son numéricamente estables en su forma original. Se reformulan en sistemas como el **formalismo BSSN**. `EinsteinPy` tiene implementaciones de este formalismo, que es el estándar en el campo.
+* **Sistema de Evolución (Ecuaciones de Einstein):** Las ecuaciones de Einstein `G_μν = 8πG * T_μν` no son numéricamente estables en su forma original. Se reformulan en sistemas como el **formalismo BSSN**. `EinsteinPy` tiene implementaciones de este formalismo, que es el estándar en el campo.
 
 **3. Script de Configuración Inicial:**
 
@@ -542,9 +542,9 @@ El solucionador aplicaría iterativamente las ecuaciones de Einstein en cada pun
 
 Una vez finalizada la simulación, tendríamos un conjunto de datos masivo que representa la métrica del espacio-tiempo en toda la malla. El análisis se centraría en comparar esta métrica resultante con la métrica de Schwarzschild teórica.
 
-*   **Comparación de Componentes:** Se harían gráficos de los componentes clave de la métrica. Por ejemplo, se graficaría el componente `g_tt` (que controla la dilatación del tiempo) en función de la distancia radial `r`. Este gráfico se superpondría con el gráfico teórico de `(1 - 2GM/r)` de la solución de Schwarzschild.
+* **Comparación de Componentes:** Se harían gráficos de los componentes clave de la métrica. Por ejemplo, se graficaría el componente `g_tt` (que controla la dilatación del tiempo) en función de la distancia radial `r`. Este gráfico se superpondría con el gráfico teórico de `(1 - 2GM/r)` de la solución de Schwarzschild.
 
-*   **Visualización de la Curvatura:** Se podrían crear visualizaciones 2D o 3D que muestren la "deformación" del espacio. Por ejemplo, un "diagrama de inmersión" que represente el espacio ecuatorial como una superficie curva.
+* **Visualización de la Curvatura:** Se podrían crear visualizaciones 2D o 3D que muestren la "deformación" del espacio. Por ejemplo, un "diagrama de inmersión" que represente el espacio ecuatorial como una superficie curva.
 
 **Resultado Esperado para la Validación:**
 

@@ -20,46 +20,55 @@ La conjetura se formaliza mediante:
 #### 2.1 Constante de Hubble y Relación Tiempo-Distancia
 
 **Predicción central:** La constante de Hubble `H₀` se deriva de los parámetros de la rotación 4D.
-```
+
+```latex
 H₀ = (ω₄D · R₄D)/(2π) · f_estereográfico
 ```
+
 Donde `ω₄D` es la velocidad angular 4D, `R₄D` es el radio de la 4-esfera y `f_estereográfico ≈ 0.5` es un factor geométrico. Para H₀ ≈ 70 km/s/Mpc, esto implica `ω₄D · R₄D ≈ 1.45 × 10⁻¹⁷ m/s`.
 
 **Relación tiempo-distancia modificada:** A escalas cosmológicas, se predice una desviación de la linealidad estricta:
-```
+
+```latex
 v(r) = H₀ · r · [1 + α · (r/R₄D)²]
 ```
+
 Donde `α` es un parámetro de curvatura hiperdimensional medible.
 
 #### 2.2 Anisotropías en el Fondo Cósmico de Microondas (CMB)
 
 **Patrón de rotación proyectada:** La función de correlación angular del CMB debe contener términos únicos de orden superior.
-```
+
+```latex
 C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
 ```
+
 **Eje preferencial observable:** El eje de rotación 4D se manifestaría como una dirección preferencial en el cielo con simetría cuádruple, un gradiente de temperatura específico y patrones de polarización correlacionados.
 
 #### 2.3 Variaciones Temporales de H₀
 
 **Oscilaciones y deriva:** Si la rotación 4D no es perfectamente uniforme, se esperan variaciones temporales.
+
 - **Oscilaciones:** `H(t) = H₀ [1 + ε · cos(ω_perturbación · t + φ)]` con `ε ~ 10⁻⁴ - 10⁻³`.
 - **Deriva secular:** `dH₀/dt = -H₀²/ω₄D · (dω₄D/dt)` para una desaceleración gradual.
 
 #### 2.4 Efectos en Estructuras a Gran Escala
 
 **Correlaciones y flujos:** La rotación debería inducir patrones en la distribución y movimiento de galaxias.
+
 - **Correlaciones direccionales:** `ξ(r, θ) = ξ₀(r) · [1 + A_rot · P₄(cos(θ))]`, donde `P₄` es el polinomio de Legendre de orden 4.
 - **Velocidades peculiares:** Un flujo coherente adicional `v_peculiar = v_4D · sin(2πr/λ_4D)`.
 
 #### 2.5 Explicación Unificada de Materia y Energía Oscura
 
 **Energía y presión rotacional:** La energía cinética de la rotación 4D y la tensión resultante podrían explicar los fenómenos atribuidos a la materia y energía oscura.
+
 - **Densidad de energía rotacional (Materia Oscura):** `ρ_rot = (1/2) · ρ_total · (v_rot/c)²`, que se predice cuantitativamente como ~27% de la densidad crítica.
 - **Presión efectiva negativa (Energía Oscura):** `P_eff = -ρ_rot · (v_rot/c)² · f_proyección`, generando una aceleración cósmica.
 
 ## Análisis de Factibilidad Experimental
 
-### 4.1 Experimentos Inmediatos (2025-2027)
+### 4.1 Experimentos Inmediatos
 
 1. **Reánalisis de datos Planck/WMAP**
    - Búsqueda de patrones cuádruples específicos
@@ -70,7 +79,7 @@ C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
    - Detección de variaciones direccionales en H₀
    - Mapeo de inhomogeneidades sistemáticas
 
-### 4.2 Observaciones de Nueva Generación (2027-2030)
+### 4.2 Observaciones de Nueva Generación
 
 1. **Cartografía de velocidades peculiares**
    - Mapeo 3D de flujos galácticos coherentes
@@ -80,7 +89,7 @@ C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
    - Precisión mejorada (10⁻⁴) durante períodos prolongados
    - Detección de oscilaciones características
 
-### 4.3 Verificación Definitiva (2030+)
+### 4.3 Verificación Definitiva
 
 1. **Ondas gravitacionales rotacionales 4D**
    - LISA y Pulsar Timing Arrays
@@ -88,14 +97,14 @@ C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
 
 ## Criterios de Falsabilidad
 
-### 5.1 El modelo será REFUTADO si:
+### 5.1 El modelo será REFUTADO si
 
 1. **No se detectan anisotropías cuádruples** en el CMB con la sensibilidad esperada
 2. **H₀ es perfectamente constante** durante observaciones de décadas
 3. **No hay correlaciones direccionales** en estructuras a gran escala
 4. **La energía rotacional calculada** no coincide con observaciones de materia oscura
 
-### 5.2 El modelo será CONFIRMADO si:
+### 5.2 El modelo será CONFIRMADO si
 
 1. **Se detecta eje de rotación preferencial** en múltiples observables independientes
 2. **Oscilaciones de H₀** siguen patrones temporales predichos
@@ -177,5 +186,3 @@ La conjetura de rotación hiperdimensional representa una hipótesis científica
 El modelo merece investigación experimental sistemática como alternativa viable al paradigma ΛCDM estándar, con el potencial de revolucionar nuestra comprensión de la estructura fundamental del universo.
 
 ---
-
-*Análisis completado mediante metodología científica estructurada y modelos de pensamiento avanzados*

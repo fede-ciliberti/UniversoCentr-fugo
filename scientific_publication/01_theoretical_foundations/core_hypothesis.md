@@ -160,7 +160,7 @@ La densidad de energía `ρ_rot` se deriva de la energía cinética de la rotaci
 * **Volumen (Hiperárea) de la 3-esfera (`V`):** `V = 2π²R³`.
 * **Densidad de Energía (`ρ_rot`):**
 
-    ```
+    ```latex
     ρ_rot = E_k / V = [(1/2)MR²ω_4D²] / [2π²R³] = (M * ω_4D²) / (4π² * R)
     ```
 

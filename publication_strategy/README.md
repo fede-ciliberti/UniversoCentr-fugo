@@ -5,31 +5,41 @@ Esta carpeta contiene la estrategia completa para la publicación científica de
 ## 📋 Estructura
 
 ### [`target_analysis/`](target_analysis/)
+
 **Análisis de Revistas Objetivo**
+
 - Evaluación de revistas científicas apropiadas
 - Análisis de requisitos específicos y probabilidades de aceptación
 - Identificación de reviewers potenciales
 
 ### [`manuscript_preparation/`](manuscript_preparation/)
+
 **Preparación de Manuscrito**
+
 - [`plan_reorganizacion_cientifica_completo.md`](manuscript_preparation/plan_reorganizacion_cientifica_completo.md) - Plan maestro de organización científica
 - Estructura del manuscrito principal (8,000-12,000 palabras)
 - Material suplementario y appendices
 
 ### [`submission_strategy/`](submission_strategy/)
+
 **Estrategia de Envío**
+
 - [`plan_verificacion_completa.md`](submission_strategy/plan_verificacion_completa.md) - Plan de verificación integral
 - Secuencia de submissions
 - Cover letters y materiales de apoyo
 
 ### [`communication_plan/`](communication_plan/)
+
 **Plan de Comunicación**
+
 - Estrategias para diferentes audiencias científicas
 - Materiales de presentación
 - Outreach científico
 
 ### [`risk_management/`](risk_management/)
+
 **Gestión de Riesgos**
+
 - Análisis de críticas potenciales
 - Estrategias de contingencia
 - Respuestas preparadas a objeciones
@@ -39,18 +49,21 @@ Esta carpeta contiene la estrategia completa para la publicación científica de
 ### Tier 1 - Alto Impacto
 
 **1. Journal of Cosmology and Astroparticle Physics (JCAP)**
+
 - **Factor de Impacto**: ~6.0
 - **Especialización**: Cosmología observacional y teórica
 - **Ventajas**: Focus específico en cosmología, audiencia especializada
 - **Estrategia**: Énfasis en predicciones observacionales específicas
 
 **2. Physical Review D (PRD)**
+
 - **Factor de Impacto**: ~5.0  
 - **Especialización**: Relatividad general, cosmología, física teórica
 - **Ventajas**: Acepta trabajos teóricos con rigor matemático
 - **Estrategia**: Énfasis en rigor matemático y derivaciones completas
 
 **3. Classical and Quantum Gravity (CQG)**
+
 - **Factor de Impacto**: ~3.5
 - **Especialización**: Relatividad general, geometría diferencial
 - **Ventajas**: Audiencia técnica especializada
@@ -78,17 +91,20 @@ Esta carpeta contiene la estrategia completa para la publicación científica de
 ## 🚀 Cronograma de Publicación
 
 ### Q3 2025 - Preparación Final
+
 - [ ] Manuscript completo preparado
 - [ ] Material suplementario organizado
 - [ ] Simulaciones de alta resolución completadas
 - [ ] Análisis de datos CMB (si disponible)
 
 ### Q4 2025 - Submission
+
 - [ ] Primera submission a JCAP
 - [ ] Preparación de respuestas a reviewers
 - [ ] Versiones alternativas para otras revistas
 
 ### Q1 2026 - Publicación
+
 - [ ] Proceso de revision completado
 - [ ] Publicación en revista objetivo
 - [ ] Diseminación y presentaciones
@@ -96,12 +112,14 @@ Esta carpeta contiene la estrategia completa para la publicación científica de
 ## 🎯 Criterios de Éxito
 
 ### Mínimos para Publicación
+
 - [ ] Marco teórico matemáticamente consistente
 - [ ] Predicciones específicas y falsables
 - [ ] Validación numérica rigurosa
 - [ ] Comparación clara con modelo ΛCDM estándar
 
 ### Excelencia Científica
+
 - [ ] Innovación conceptual genuina
 - [ ] Poder predictivo cuantitativo
 - [ ] Impacto potencial transformador
@@ -110,14 +128,17 @@ Esta carpeta contiene la estrategia completa para la publicación científica de
 ## 📊 Estrategias por Audiencia
 
 ### Para Físicos Teóricos
+
 - **Énfasis**: Rigor matemático, derivaciones completas
 - **Elementos**: Desarrollo grupo SO(4), tensor energía-momento, conservación
 
 ### Para Cosmólogos Observacionales  
+
 - **Énfasis**: Predicciones cuantitativas, protocolos experimentales
 - **Elementos**: Parámetros cosmológicos, firmas CMB, comparación ΛCDM
 
 ### Para Revisores Escépticos
+
 - **Énfasis**: Limitaciones reconocidas, criterios de falsabilidad
 - **Elementos**: Análisis de consistencia, agenda experimental clara
 
