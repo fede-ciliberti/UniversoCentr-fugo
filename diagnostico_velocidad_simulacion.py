@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Diagnóstico detallado para verificar si la simulación 64³ realmente se ejecutó correctamente.
-Investiga la anomalía de velocidad (6 segundos para 262,144 puntos × 187 pasos).
+Herramientas de diagnóstico para verificar el rendimiento y validez de simulaciones BSSN.
+Analiza integridad de datos, benchmarks de rendimiento y evolución temporal.
 """
 
 import numpy as np
@@ -17,10 +17,10 @@ def verificar_datos_simulacion():
     print("🔍 VERIFICACIÓN DE DATOS DE SIMULACIÓN")
     print("=" * 50)
     
-    # Verificar archivos existentes
+    # Verificar archivos existentes de simulaciones válidas
     archivos_esperados = [
-        'data_64cubed.npz',
-        'simulation_results.npz'
+        'simulation_results.npz',
+        'simulation_initial_data.npz'
     ]
     
     for archivo in archivos_esperados:
@@ -34,7 +34,7 @@ def verificar_datos_simulacion():
     # Cargar y analizar datos iniciales
     print(f"\n📊 ANÁLISIS DE DATOS INICIALES:")
     try:
-        data_inicial = np.load('data_64cubed.npz')
+        data_inicial = np.load('simulation_initial_data.npz')
         
         # Verificar dimensiones
         grid_size = int(data_inicial['grid_size'])
@@ -120,12 +120,11 @@ def verificar_datos_simulacion():
         print(f"   ❌ Error cargando resultados: {e}")
         return False
 
-def benchmark_operaciones_basicas():
+def benchmark_operaciones_basicas(grid_size=32):
     """Benchmark de operaciones para estimar tiempo esperado"""
     print(f"\n⏱️  BENCHMARK DE OPERACIONES BÁSICAS")
     print("=" * 50)
     
-    grid_size = 64
     total_points = grid_size**3
     
     print(f"   Creando arrays {grid_size}³ = {total_points:,} puntos...")

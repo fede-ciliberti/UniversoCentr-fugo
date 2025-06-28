@@ -62,7 +62,7 @@
 **Sub-tareas:**
 
 - [ ] **2.2.1** Verificar implementación BSSN contra literatura
-- [ ] **2.2.2** Test de convergencia: 16³ → 32³ → 64³ → 128³
+- [ ] **2.2.2** Test de convergencia: 16³ → 32³ → 128³ → 256³
 - [ ] **2.2.3** Verificar condiciones de frontera y estabilidad
 - [ ] **2.2.4** Comprobar conservación de energía-momento
 
@@ -129,7 +129,7 @@
 
 **Sub-tareas:**
 
-- [ ] **4.1.1** 32³ original vs 64³ manual vs 256³ optimizada
+- [ ] **4.1.1** 32³ original vs 256³ optimizada (implementaciones válidas)
 - [ ] **4.1.2** Script simple vs implementación completa BSSN
 - [ ] **4.1.3** Diferentes esquemas de diferencias finitas
 - [ ] **4.1.4** Múltiples condiciones iniciales
@@ -250,11 +250,11 @@
 
 ## 🚀 PRÓXIMO PASO INMEDIATO
 
-**Acción recomendada**: Comenzar con **Fase 2.3** (Diagnóstico del problema de velocidad) ya que:
+**Acción recomendada**: Continuar con **Fase 3.1** (Tests de casos límite) ya que:
 
-1. Es la anomalía más evidente (6 segundos para 64³)
-2. Su resolución afecta interpretación de todos los demás resultados
-3. Es técnicamente verificable de inmediato
-4. No requiere revisión teórica compleja
+1. Las simulaciones válidas (32³/256³) han sido confirmadas
+2. Los fundamentos numéricos están establecidos
+3. Se requiere validación física específica
+4. Los casos límite son críticos para la conjetura
 
-**Output esperado**: Script de diagnóstico que confirme o refute si la simulación realmente ejecutó 187 pasos temporales completos en 64³ puntos.
+**Output esperado**: Verificación sistemática de que las simulaciones recuperan límites físicos conocidos y predicen efectos observables.

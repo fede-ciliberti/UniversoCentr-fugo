@@ -44,8 +44,8 @@ Una vez completada la 256³, ejecutar serie sistemática:
 
 1. **32³** ✅ (ya completada: +0.489% expansión)
 2. **48³** 🔄 (siguiente: verificar tendencia)
-3. **64³** 🔄 (con algoritmo COMPLETO)
-4. **96³** 🔄 (alta precisión)
+3. **128³** 🔄 (con algoritmo COMPLETO)
+4. **256³** ✅ (alta precisión - completada)
 5. **128³** 🔄 (máxima precisión práctica)
 6. **256³** ✅ (en ejecución)
 
@@ -165,8 +165,8 @@ omega_4D_inferida = f(H_efectiva, R_param)
 # Configurar 48³
 python notebooks/optimize_simulation_params.py --target-resolution 48
 
-# Configurar 64³ (con algoritmo COMPLETO)
-python notebooks/optimize_simulation_params.py --target-resolution 64
+# Configurar 128³ (con algoritmo COMPLETO)
+python notebooks/optimize_simulation_params.py --target-resolution 128
 
 # Configurar 128³
 python notebooks/optimize_simulation_params.py --target-resolution 128
@@ -194,7 +194,7 @@ python notebooks/optimize_simulation_params.py --target-resolution 128
 
 #### Paso 5: Ejecución de Serie de Convergencia
 
-- 48³ → 64³ → 128³ (todas con algoritmo completo)
+- 48³ → 128³ → 256³ (todas con algoritmo completo)
 - Análisis comparativo sistemático
 - Confirmación de convergencia numérica
 

@@ -211,7 +211,7 @@ graph TD
 
 - **Base:** Notebooks de simulación existentes (`run_numerical_simulation.py`, `calculate_*_tensor.py`)
 - **Análisis:** [`plan_verificacion_completa.md`](plan_verificacion_completa.md) (metodología de verificación)
-- **Resultados:** Outputs de simulaciones 64³, 128³, 256³
+- **Resultados:** Outputs de simulaciones 32³, 256³ (implementaciones válidas)
 
 **Estructura del documento:**
 

@@ -472,7 +472,7 @@ def main():
     # Recomendaciones
     print(f"\n💡 RECOMENDACIONES PARA PRÓXIMAS SIMULACIONES:")
     if score < 2:
-        print(f"   🔧 Incrementar resolución espacial (64³ o 128³)")
+        print(f"   🔧 Incrementar resolución espacial (128³ o 256³)")
         print(f"   ⏱️  Incrementar tiempo de simulación (t_final = 5.0)")
         print(f"   📊 Revisar parámetros físicos (R_param, omega_4d_param)")
     else:

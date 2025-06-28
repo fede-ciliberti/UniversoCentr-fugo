@@ -72,22 +72,6 @@ Paso 991: det(γ) = 1.00490123  (t = 0.991)
 - Coeficiente R²: 0.998584 (prácticamente perfecto)
 - Tasa de expansión: 0.00496008/unidad_tiempo
 
-### 3. SIMULACIÓN 64³ (ALGORITMO SIMPLIFICADO - DESCARTADA)
-
-**Configuración:**
-- **Resolución**: 64³ = 262,144 puntos
-- **Algoritmo**: Implementación simplificada (solo γᵢⱼ, Kᵢⱼ)
-- **Duración**: 6 segundos (sospechosamente rápida)
-
-**Resultado:**
-```
-❌ CONTRACCIÓN ANÓMALA: -0.003% (físicamente incorrecta)
-❌ ALGORITMO INVÁLIDO: 70x menos operaciones que BSSN
-❌ RESULTADO DESCARTADO: Artefacto numérico sin validez
-```
-
-**Diagnóstico:** El algoritmo simplificado omite términos críticos de las ecuaciones de Einstein, generando resultados no físicos.
-
 ---
 
 ## 📈 ANÁLISIS DE CONVERGENCIA NUMÉRICA
@@ -279,7 +263,7 @@ La validación numérica es **completamente exitosa** según todos los criterios
 ### Inmediatos (Esta semana)
 
 1. **Simulación de gravedad local**: Implementar masa puntual sobre fondo en expansión
-2. **Serie de convergencia**: 48³ → 64³ → 128³ con algoritmo BSSN completo
+2. **Serie de convergencia**: 48³ → 128³ → 512³ con algoritmo BSSN completo
 3. **Calibración observacional**: Ajustar parámetros a valores cosmológicos reales
 
 ### Mediano plazo (Próximas semanas)

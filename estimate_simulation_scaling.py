@@ -190,8 +190,8 @@ def print_detailed_analysis():
     # Comparación de resolución científica
     print(f"\n🔬 IMPACTO CIENTÍFICO POR RESOLUCIÓN:")
     print(f"   32³ → 48³: Verifica tendencias básicas")
-    print(f"   48³ → 64³: Confirma patrones espaciales")
-    print(f"   64³ → 96³: Detecta efectos radiales tipo Schwarzschild")
+    print(f"   48³ → 128³: Confirma patrones espaciales")
+    print(f"   128³ → 256³: Detecta efectos radiales con alta precisión")
     print(f"   96³ → 128³: Análisis cuantitativo preciso")
     print(f"   128³+: Efectos sutiles y validación rigorosa")
 

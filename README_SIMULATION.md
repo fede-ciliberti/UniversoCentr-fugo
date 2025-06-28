@@ -109,7 +109,7 @@ La simulación exitosa debe mostrar:
 ### Sistemas Recomendados:
 - **Mínimo**: 4 cores, 8 GB RAM → Resolución 16³, ~5 min
 - **Recomendado**: 8 cores, 16 GB RAM → Resolución 32³, ~15 min  
-- **Óptimo**: 16+ cores, 32+ GB RAM → Resolución 64³+, ~1 hora
+- **Óptimo**: 16+ cores, 32+ GB RAM → Resolución 128³+, ~2 horas
 
 ### Métricas de Rendimiento:
 El sistema mostrará en tiempo real:

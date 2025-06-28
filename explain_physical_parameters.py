@@ -144,7 +144,7 @@ def recommend_parameter_exploration():
     print(f"\n🎯 RECOMENDACIONES PARA EXPLORACIÓN")
     print("=" * 45)
     
-    print(f"\n📊 Para tu simulación 64³, puedes probar:")
+    print(f"\n📊 Para simulaciones futuras, puedes probar:")
     
     print(f"\n🔬 Exploración sistemática de omega_4d_param:")
     print(f"   • omega_4d = 0.05  → Efectos más sutiles, evolución lenta")
@@ -159,7 +159,7 @@ def recommend_parameter_exploration():
     print(f"   • R_param = 5.0    → Efectos a gran escala")
     
     print(f"\n💡 Estrategia recomendada:")
-    print(f"   1. Ejecutar 64³ con valores actuales (R=1.0, ω=0.1)")
+    print(f"   1. Ejecutar 128³ con valores actuales (R=1.0, ω=0.1)")
     print(f"   2. Si los resultados son buenos, probar ω=0.2")
     print(f"   3. Luego probar R=2.0 (manteniendo ω=0.1)")
     print(f"   4. Comparar todos los resultados")
@@ -184,7 +184,7 @@ def main():
     print(f"• Los valores actuales (R=1.0, ω=0.1) son conservadores pero detectables")
     
     print(f"\n🚀 PRÓXIMO PASO:")
-    print(f"¿Quieres ejecutar 64³ con valores actuales, o modificar algún parámetro?")
+    print(f"¿Quieres ejecutar 128³ con valores actuales, o modificar algún parámetro?")
 
 if __name__ == "__main__":
     main()
