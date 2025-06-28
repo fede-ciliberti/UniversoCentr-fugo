@@ -1,1 +1,0 @@
-# Esquema del Manuscrito Principal

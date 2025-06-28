@@ -1,1 +1,0 @@
-# Consideraciones de Propiedad Intelectual

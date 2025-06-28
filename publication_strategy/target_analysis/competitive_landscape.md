@@ -1,1 +1,0 @@
-# Análisis del Panorama Competitivo
