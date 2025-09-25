@@ -1,0 +1,20 @@
+{
+  "description": "Configuración para un cúmulo de 3 masas locales para la simulación de efecto regional.",
+  "masses": [
+    {
+      "mass": 1.5,
+      "position": [-2.0, -2.0, 0.0],
+      "smoothing_radius": 0.8
+    },
+    {
+      "mass": 1.5,
+      "position": [2.0, -2.0, 0.0],
+      "smoothing_radius": 0.8
+    },
+    {
+      "mass": 2.0,
+      "position": [0.0, 2.0, 0.0],
+      "smoothing_radius": 1.0
+    }
+  ]
+}

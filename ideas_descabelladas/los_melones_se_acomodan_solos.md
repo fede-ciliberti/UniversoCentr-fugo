@@ -1,0 +1,3 @@
+Resulta interesante observar que cuando hay cuerpos libres en un espacio que gira, estos tienden a acomodarse de manera que minimizan la energía del sistema. Un ejemplo clásico de este fenómeno es el comportamiento de los melones en un camión que toma una curva.
+
+Lo mismo puede pensarse para la distribución de la energia en un sistema de partículas en rotación. En nuestra conjetura del universo centrífugo la materia se acomomdaría de forma tal que la brana quedaría equilibrada con un radio de rotación constante.

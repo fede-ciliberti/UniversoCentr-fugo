@@ -368,15 +368,57 @@ class EinsteinSimulator:
         np.savez_compressed(filename, **checkpoint_data)
         return filename
 
-    def run_simulation(self, save_checkpoints=True, verbose=True):
+    def load_checkpoint(self, checkpoint_file):
+        """Carga el estado de la simulación desde un archivo de checkpoint."""
+        print(f"🔄 Cargando estado desde el checkpoint: {checkpoint_file}")
+        try:
+            data = np.load(checkpoint_file)
+            
+            # Restaurar variables de evolución
+            self.gamma_xx = data['gamma_xx']
+            self.gamma_yy = data['gamma_yy']
+            self.gamma_zz = data['gamma_zz']
+            self.gamma_xy = data['gamma_xy']
+            self.gamma_xz = data['gamma_xz']
+            self.gamma_yz = data['gamma_yz']
+            self.K_xx = data['K_xx']
+            self.K_yy = data['K_yy']
+            self.K_zz = data['K_zz']
+            
+            # Restaurar tiempo y paso
+            start_step = int(data['step']) + 1
+            t = float(data['time'])
+            
+            print(f"✓ Checkpoint cargado. Reanudando desde el paso {start_step} (t={t:.4f})")
+            return start_step, t
+            
+        except FileNotFoundError:
+            print(f"❌ Error: No se encontró el archivo de checkpoint {checkpoint_file}")
+            return 0, 0.0
+        except Exception as e:
+            print(f"❌ Error al cargar el checkpoint: {e}")
+            return 0, 0.0
+
+    def run_simulation(self, save_checkpoints=True, verbose=True, resume_from_checkpoint=None):
         """
         Ejecuta la simulación completa con monitoreo en tiempo real.
+        Puede reanudar desde un checkpoint si se proporciona.
         """
+        start_step = 0
+        t = 0.0
+
+        if resume_from_checkpoint:
+            start_step, t = self.load_checkpoint(resume_from_checkpoint)
+
+        if start_step == 0 and resume_from_checkpoint:
+             print("   No se pudo cargar el checkpoint. Iniciando desde cero.")
+
         print("\n🚀 Iniciando simulación numérica...")
         print("=" * 60)
         
         start_time = time.time()
-        t = 0.0
+        step = start_step
+        axes = None
         
         # Configurar visualización en tiempo real
         if verbose:
@@ -385,7 +427,7 @@ class EinsteinSimulator:
             plt.ion()
         
         try:
-            for step in range(self.n_steps):
+            for step in range(start_step, self.n_steps):
                 # Evolucionar un paso temporal
                 t = self.run_single_timestep(t)
                 
@@ -395,7 +437,7 @@ class EinsteinSimulator:
                     
                     elapsed = time.time() - start_time
                     progress = (step + 1) / self.n_steps * 100
-                    eta = elapsed / (step + 1) * (self.n_steps - step - 1)
+                    eta = elapsed / (step + 1) * (self.n_steps - step - 1) if step > 0 else 0
                     
                     if verbose:
                         print(f"Paso {step+1:6d}/{self.n_steps} | "
@@ -406,7 +448,7 @@ class EinsteinSimulator:
                               f"tr(K)={invariants['trace_K']:.6f}")
                     
                     # Actualizar visualización
-                    if verbose and step % (self.output_every * 5) == 0:
+                    if verbose and step % (self.output_every * 5) == 0 and axes is not None:
                         self.update_visualization(axes, t, invariants)
                     
                     # Guardar checkpoint
@@ -433,13 +475,14 @@ class EinsteinSimulator:
         
         finally:
             total_time = time.time() - start_time
-            if verbose:
+            if verbose and axes is not None:
                 plt.ioff()
                 plt.show()
             
             print(f"\n✅ Simulación completada")
-            print(f"⏱️  Tiempo total: {total_time/60:.2f} minutos")
-            print(f"⚡ Rendimiento: {step*self.total_points/total_time/1000:.1f}k puntos/segundo")
+            if step > start_step:
+                print(f"⏱️  Tiempo total: {total_time/60:.2f} minutos")
+                print(f"⚡ Rendimiento: {(step - start_step)*self.total_points/total_time/1000:.1f}k puntos/segundo")
             
             # Guardar resultados finales
             self.save_final_results()
@@ -470,9 +513,9 @@ class EinsteinSimulator:
         plt.tight_layout()
         plt.pause(0.01)
 
-    def save_final_results(self):
-        """Guarda los resultados finales de la simulación"""
-        results = {
+    def get_final_results_dict(self):
+        """Retorna un diccionario con los resultados finales de la simulación."""
+        return {
             'time_evolution': np.array(self.time_evolution),
             'metric_evolution': self.metric_evolution,
             'final_gamma_xx': self.gamma_xx,
@@ -489,11 +532,13 @@ class EinsteinSimulator:
                 'dx': self.dx, 'dy': self.dy, 'dz': self.dz
             }
         }
-        
+
+    def save_final_results(self) -> str:
+        """Guarda los resultados finales de la simulación"""
+        results = self.get_final_results_dict()
         output_file = "simulation_results.npz"
         np.savez_compressed(output_file, **results)
         print(f"💾 Resultados guardados en: {output_file}")
-        
         return output_file
 
 def main():

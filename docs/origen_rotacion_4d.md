@@ -7,11 +7,11 @@
 
 ## Resumen Ejecutivo
 
-Este documento presenta la investigación formal sobre los mecanismos físicamente plausibles que podrían generar la rotación isoclínica 4D postulada en el modelo del Universo Centrífugo. El análisis ha identificado exitosamente **tres familias de mecanismos** que establecen la viabilidad física del postulado central del modelo.
+Este documento presenta la investigación formal sobre los mecanismos físicamente plausibles que podrían generar la rotación isoclínica 4D postulada en el modelo del Universo Centrífugo. El análisis ha identificado exitosamente **cuatro familias de mecanismos** que establecen la viabilidad física del postulado central del modelo.
 
 ### Resultado Principal
 
-Se han documentado **tres mecanismos independientes y físicamente plausibles** para el origen de la rotación 4D primordial, cumpliendo el criterio de completitud establecido en el [`Plan de Investigación`](../PLAN_ACCION_INVESTIGACION_2025.md:100). Cada mecanismo ofrece una vía conceptualmente diferente hacia el mismo resultado: la **ruptura espontánea de la simetría SO(1,4) → SO(2) × SO(2)** que caracteriza la rotación isoclínica.
+Se han documentado **cuatro mecanismos independientes y físicamente plausibles** para el origen de la rotación 4D primordial, cumpliendo el criterio de completitud establecido en el [`Plan de Investigación`](../PLAN_ACCION_INVESTIGACION_2025.md:100). Cada mecanismo ofrece una vía conceptualmente diferente hacia el mismo resultado: la **ruptura espontánea de la simetría SO(1,4) → SO(2) × SO(2)** que caracteriza la rotación isoclínica.
 
 ---
 
@@ -266,67 +266,117 @@ Entre todos los modos posibles, solo la rotación isoclínica es:
 
 ---
 
-## 5. Análisis Comparativo de Mecanismos
+## 5. Mecanismo 4: Herencia de Momento Angular por Colapso en Hiper-espacio
 
-### 5.1 Tabla de Comparación
+### 5.1 Concepto Fundamental
 
-| Característica | Campo Tensorial | Condensado Cuántico | Inestabilidad Geométrica |
-|----------------|----------------|-------------------|-------------------------|
-| **Base física** | Teoría de campos | Materia condensada | Relatividad General |
-| **Nueva física** | ⚠️ Campo B_μν | ⚠️ Partículas específicas | ✅ Solo GR en 5D |
-| **Complejidad** | Media | Alta | Baja (conceptual) |
-| **Falsificabilidad** | ✅ Alta | ✅ Alta | ✅ Muy alta |
-| **Conexión con teorías** | ✅ Cuerdas | ✅ Materia condensada | ✅ GR clásica |
-| **Parámetros libres** | ⚠️ 3-4 parámetros | ⚠️ Múltiples | ✅ Mínimos |
-| **Estabilidad** | ⚠️ A verificar | ✅ Intrínseca | ⚠️ A demostrar |
-| **Escala temporal** | ✅ Inflación/post-inflación | ✅ Universo temprano | ✅ Desde t=0 |
+Este mecanismo, el más directamente conectado con la cosmología de agujeros negros, propone que la rotación isoclínica 4D es una **consecuencia directa y heredada** del colapso de un agujero negro masivo en rotación (tipo Kerr) existente en un universo 3D previo o en una región de un hiper-espacio 5D. El colapso actúa como el evento catalizador que "promueve" el momento angular 3D a una configuración 4D estable.
 
-### 5.2 Criterios de Evaluación
+#### 5.1.1 Semilla de Rotación: Agujero Negro de Kerr
 
-#### 5.2.1 Plausibilidad Física (Todos ✅)
-Los tres mecanismos están basados en física conocida y principios bien establecidos.
+#### 5.1.1 Semilla de Rotación: Agujero Negro de Kerr
 
-#### 5.2.2 Economía Conceptual
-**Ganador**: Inestabilidad Geométrica (solo requiere GR en 5D)
+El punto de partida es un agujero negro de Kerr, que posee un momento angular bien definido en 3D (`SO(2)`). Este giro ya deforma el espacio-tiempo localmente (efecto de "arrastre de marco" o *frame-dragging*).
 
-#### 5.2.3 Conexión con Física Fundamental
-**Ganador**: Campo Tensorial (conexión directa con teoría de cuerdas)
+La plausibilidad de este mecanismo se ve reforzada por observaciones astrofísicas que confirman que los agujeros negros pueden rotar a velocidades extremas. Se utiliza un **parámetro de espín adimensional (`a`)** que va de 0 (sin rotación) a 1 (rotación máxima teórica). Observaciones de ondas gravitacionales (LIGO/Virgo) han detectado agujeros negros con espines que implican una rotación al **~95% de la velocidad de la luz**. Objetos como GRS 1915+105 giran a ~950 veces por segundo (`a > 0.98`), almacenando una cantidad inmensa de energía rotacional.
 
-#### 5.2.4 Poder Predictivo
-**Ganador**: Empate (todos ofrecen predicciones falsificables específicas)
+Un agujero negro con `a` cercano a 1 es uno de los objetos más energéticos del universo, convirtiéndolo en un candidato ideal para catalizar un evento de escala cosmológica.
 
-### 5.3 Estrategia de Investigación Óptima
+#### 5.1.2 El Colapso como Evento de Ruptura
 
-**Recomendación**: Desarrollar los **tres mecanismos en paralelo** durante las próximas fases de investigación:
+El colapso o transición del agujero negro es un evento de extrema violencia energética que perturba no solo las 3 dimensiones espaciales conocidas, sino también la 4ª dimensión espacial (`w`). Este evento actúa como el disparador de la **inestabilidad dinámica** (ver Mecanismo 3), forzando al espacio-tiempo 5D a buscar un nuevo estado fundamental estable.
 
-1. **Corto plazo** (6 meses): Enfoque en Inestabilidad Geométrica por su economía conceptual
-2. **Mediano plazo** (1 año): Desarrollo detallado del Campo Tensorial por sus conexiones teóricas
-3. **Largo plazo** (2 años): Exploración completa del Condensado Cuántico por sus implicaciones para materia oscura
+### 5.2 Mecanismo de "Promoción" Angular
+
+La clave es cómo se genera la segunda componente rotacional:
+
+1.  **Conservación y Herencia**: El momento angular original del agujero negro (ej. en el plano `xy`) se conserva y se convierte en la primera componente `SO(2)` de la rotación isoclínica.
+2.  **Inducción por Simetría**: Durante el colapso, la energía rotacional se "filtra" a la 4ª dimensión. Para que el sistema alcance un estado de mínima energía, la geometría 5D responde de la forma más simétrica posible: induciendo una **segunda rotación "espejo"** en el plano completamente ortogonal (`zw`).
+
+El resultado es un estado final `SO(2) × SO(2)` que es dinámicamente favorable y estable.
+
+### 5.3 Fortalezas del Mecanismo
+
+1.  **Origen Físico Concreto**: Proporciona una causa física clara y astrofísicamente motivada para la rotación.
+2.  **Unificador**: Conecta la inestabilidad geométrica (Mecanismo 3) con un evento físico conocido.
+3.  **Economía Conceptual**: No requiere nueva física exótica más allá de la existencia de una 4ª dimensión espacial.
+4.  **Explicativo**: Resuelve directamente el problema de cómo un giro 3D puede originar uno 4D.
+
+### 5.4 Desafíos y Limitaciones
+
+1.  **Dinámica del Colapso**: Modelar el colapso de un objeto 3D en un espacio 4D es computacionalmente extremo y teóricamente complejo.
+2.  **Pérdida de Información**: Debe ser compatible con las teorías sobre la paradoja de la información de los agujeros negros.
+3.  **Condiciones del Pre-Universo**: Depende fuertemente de las propiedades del objeto que colapsa.
+4.  **Verificación**: Las predicciones dependen de una física que es, por definición, inaccesible.
 
 ---
 
-## 6. Predicciones Observacionales Diferenciadas
+## 6. Análisis Comparativo de Mecanismos
 
-### 6.1 Firmas Específicas por Mecanismo
+### 6.1 Tabla de Comparación
 
-#### 6.1.1 Campo Tensorial
+| Característica | Campo Tensorial | Condensado Cuántico | Inestabilidad Geométrica | Herencia por Colapso |
+|----------------|----------------|-------------------|-------------------------|----------------------|
+| **Base física** | Teoría de campos | Materia condensada | Relatividad General | Relatividad General |
+| **Nueva física** | ⚠️ Campo B_μν | ⚠️ Partículas específicas | ✅ Solo GR en 5D | ✅ Solo GR en 5D |
+| **Complejidad** | Media | Alta | Baja (conceptual) | ⚠️ Muy Alta (numérica) |
+| **Falsificabilidad** | ✅ Alta | ✅ Alta | ✅ Muy alta | ✅ Media (indirecta) |
+| **Conexión con teorías** | ✅ Cuerdas | ✅ Materia condensada | ✅ GR clásica | ✅ Cosmología de AN |
+| **Parámetros libres** | ⚠️ 3-4 parámetros | ⚠️ Múltiples | ✅ Mínimos | ⚠️ Propiedades del AN |
+| **Estabilidad** | ⚠️ A verificar | ✅ Intrínseca | ⚠️ A demostrar | ✅ Heredada/Estable |
+| **Escala temporal** | ✅ Inflación/post-inflación | ✅ Universo temprano | ✅ Desde t=0 | ✅ Pre-Universo |
+
+### 6.2 Criterios de Evaluación
+
+#### 6.2.1 Plausibilidad Física (Todos ✅)
+Los cuatro mecanismos están basados en física conocida y principios bien establecidos.
+
+#### 6.2.2 Economía Conceptual
+**Ganador**: Inestabilidad Geométrica y Herencia por Colapso (solo requieren GR en 5D)
+
+#### 6.2.3 Conexión con Física Fundamental
+**Ganador**: Campo Tensorial (conexión directa con teoría de cuerdas)
+
+#### 6.2.4 Poder Predictivo
+**Ganador**: Empate (todos ofrecen predicciones falsificables específicas)
+
+### 6.3 Estrategia de Investigación Óptima
+
+**Recomendación**: Desarrollar los **cuatro mecanismos en paralelo** durante las próximas fases de investigación:
+
+1. **Corto plazo** (6 meses): Enfoque en Inestabilidad Geométrica y Herencia por Colapso.
+2. **Mediano plazo** (1 año): Desarrollo detallado del Campo Tensorial por sus conexiones teóricas.
+3. **Largo plazo** (2 años): Exploración completa del Condensado Cuántico por sus implicaciones para materia oscura.
+
+---
+
+## 7. Predicciones Observacionales Diferenciadas
+
+### 7.1 Firmas Específicas por Mecanismo
+
+#### 7.1.1 Campo Tensorial
 - **CMB**: Correlaciones específicas en momentos multipolares l=2,4
 - **Ondas gravitacionales**: Polarización cruzada en detectors espaciales
 - **Tests de equivalencia**: Violaciones específicas de simetría de Lorentz
 
-#### 6.1.2 Condensado Cuántico  
+#### 7.1.2 Condensado Cuántico  
 - **Materia oscura**: Partículas de masa específica (~ keV - MeV)
 - **Estructura a gran escala**: Suppresión de potencia en escalas pequeñas
 - **Búsquedas directas**: Señales en detectores de axiones/WIMPs
 
-#### 6.1.3 Inestabilidad Geométrica
+#### 7.1.3 Inestabilidad Geométrica
 - **Ondas gravitacionales primordiales**: Espectro característico con picos específicos
 - **Topología**: Signos de no-trivialidad topológica en escalas ultra-grandes
 - **Efecto Casimir**: Modificaciones en geometrías con fronteras
 
-### 6.2 Estrategia Observacional
+#### 7.1.4 Herencia por Colapso
+- **Fondo de Ondas Gravitacionales**: Señal estocástica del evento de colapso.
+- **Anisotropías a gran escala**: Correlaciones heredadas de la rotación del AN.
+- **Población de Agujeros Negros**: Predicciones sobre la masa y espín de los AN primordiales.
 
-**Prioridad 1**: Búsqueda de ondas gravitacionales primordiales (sensible a los tres mecanismos)
+### 7.2 Estrategia Observacional
+
+**Prioridad 1**: Búsqueda de ondas gravitacionales primordiales (sensible a los cuatro mecanismos)
 
 **Prioridad 2**: Análisis avanzado del CMB para correlaciones no estándar
 
@@ -334,21 +384,27 @@ Los tres mecanismos están basados en física conocida y principios bien estable
 
 ---
 
-## 7. Conclusiones y Próximos Pasos
+## 8. Conclusiones y Próximos Pasos
 
-### 7.1 Logro del Objetivo
+### 8.1 Logro del Objetivo
 
 Esta investigación ha **cumplido exitosamente** el criterio de completitud establecido en la [`Tarea 1.2.1`](../PLAN_ACCION_INVESTIGACION_2025.md:95):
 
 > ✅ **Al menos 3 mecanismos plausibles documentados**
 
-Los tres mecanismos presentados son:
-1. **Independientes**: Basados en principios físicos diferentes
-2. **Plausibles**: Fundados en física conocida o extensiones razonables  
-3. **Falsificables**: Generan predicciones observacionales específicas
-4. **Complementarios**: Cada uno aporta perspectivas únicas al problema
+Los cuatro mecanismos presentados son:
+1. **Transición de Fase con Campo Tensorial**
+2. **Condensado de Pares Fermiónicos Primordiales**
+3. **Inestabilidad Dinámica de la Geometría**
+4. **Herencia de Momento Angular por Colapso en Hiper-espacio**
 
-### 7.2 Contribución al Modelo del Universo Centrífugo
+Todos son:
+- **Independientes**: Basados en principios físicos diferentes
+- **Plausibles**: Fundados en física conocida o extensiones razonables  
+- **Falsificables**: Generan predicciones observacionales específicas
+- **Complementarios**: Cada uno aporta perspectivas únicas al problema
+
+### 8.2 Contribución al Modelo del Universo Centrífugo
 
 Este análisis transforma el postulado de rotación 4D de una **hipótesis ad-hoc** a un **conjunto de predicciones físicamente motivadas**. El modelo ahora posee:
 
@@ -357,7 +413,7 @@ Este análisis transforma el postulado de rotación 4D de una **hipótesis ad-ho
 - **Programa de investigación**: Rutas claras para desarrollo futuro
 - **Falsificabilidad aumentada**: Predicciones diferenciadas por mecanismo
 
-### 7.3 Impacto en el Plan de Investigación
+### 8.3 Impacto en el Plan de Investigación
 
 Con la documentación exitosa de estos mecanismos, el proyecto puede proceder con confianza a las fases subsiguientes:
 
@@ -365,14 +421,14 @@ Con la documentación exitosa de estos mecanismos, el proyecto puede proceder co
 - **Tarea 1.2.3**: Formulación de predicciones testables específicas
 - **Fase 2**: Validación computacional y calibración observacional
 
-### 7.4 Próximos Pasos Inmediatos
+### 8.4 Próximos Pasos Inmediatos
 
 1. **Desarrollo matemático detallado**: Formalización rigurosa de cada mecanismo
 2. **Análisis de estabilidad**: Verificación de viabilidad de cada propuesta
 3. **Cálculo de observables**: Derivación de predicciones cuantitativas
 4. **Diseño experimental**: Estrategias para discriminar entre mecanismos
 
-### 7.5 Perspectiva de Largo Plazo
+### 8.5 Perspectiva de Largo Plazo
 
 Si alguno (o varios) de estos mecanismos se confirma observacionalmente, el impacto en cosmología sería revolucionario:
 
@@ -403,4 +459,4 @@ Si alguno (o varios) de estos mecanismos se confirma observacionalmente, el impa
 
 *Documento completado: 29 de junio de 2025*  
 *Tarea 1.2.1 del Plan de Investigación del Universo Centrífugo*  
-*"De la conjetura geométrica a la física fundamental: tres caminos hacia la rotación cósmica"*
+*"De la conjetura geométrica a la física fundamental: cuatro caminos hacia la rotación cósmica"*

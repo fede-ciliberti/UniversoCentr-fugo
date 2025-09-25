@@ -148,12 +148,12 @@ gantt
   - **Estado**: VALIDACIÓN PARCIAL - Principio de Superposición Cosmológico validado
   - **Resultado**: Tests exitosos 3/4, régimen global preservado, transición suave confirmada
 
-- [ ] **2.1.3** Análisis de Efectos de Acoplamiento
-  - [ ] Cuantificar interacciones entre gravedad local y expansión global
-  - [ ] Identificar correcciones a ley de Hubble en presencia de masa
-  - [ ] Evaluar implicaciones para observaciones galácticas
-  - **Entregable**: Dataset `acoplamiento_local_global.npz`
-  - **Criterio de Completitud**: Caracterización completa de efectos cruzados
+- [x] **2.1.3** Análisis de Efectos de Acoplamiento ✅ COMPLETADA
+  - [x] Cuantificar interacciones entre gravedad local y expansión global
+  - [x] Identificar correcciones a ley de Hubble en presencia de masa
+  - [x] Evaluar implicaciones para observaciones galácticas
+  - **Entregable**: Dataset [`acoplamiento_local_global.npz`](acoplamiento_local_global.npz) ✅ GENERADO
+  - **Criterio de Completitud**: Caracterización completa de efectos cruzados ✅ CUMPLIDO
 
 **🎯 Resultado Esperado Tarea 2.1**: Demostración de que el modelo es consistente a múltiples escalas simultáneamente.
 
@@ -161,32 +161,46 @@ gantt
 
 ### 📏 Tarea 2.2: Calibración de Parámetros con Datos Observacionales
 
-**Objetivo**: Determinar valores de (R, ω₄D) que reproduzcan parámetros cosmológicos observados.
+**Objetivo**: Determinar valores o cotas para los parámetros `R` y `ω₄D` que reproduzcan observaciones clave del universo.
 
 #### Subtareas
 
-- [ ] **2.2.1** Implementación de Barrido Paramétrico
-  - [ ] Crear script para ejecutar simulaciones con grid de parámetros
-  - [ ] Implementar cálculo automático de H₀ usando [`verify_hubble_law.py`](experimental_validation/hubble_verification/verify_hubble_law.py)
-  - [ ] Optimizar eficiencia computacional para múltiples ejecuciones
-  - **Entregable**: Script `parameter_calibration_scan.py`
-  - **Criterio de Completitud**: Grid completo de al menos 50 combinaciones (R, ω₄D)
+- [x] **2.2.0** Estimación de la Relación de Parámetros Vía Precesión de Mercurio ✅ COMPLETADA
+  - [x] Implementar ecuación de precesión del perihelio de Mercurio.
+  - [x] Establecer la relación funcional entre `R` y `ω₄D` que satisface la observación.
+  - **Entregable**: Script inicial [`estimate_initial_parameters.py`](computational_implementation/analysis_tools/estimate_initial_parameters.py).
+  - **Criterio de Completitud**: Ecuación de restricción implementada y verificada. ✅ CUMPLIDO.
 
-- [ ] **2.2.2** Ajuste a Constante de Hubble Observada
-  - [ ] Identificar región paramétrica que reproduce H₀ = 70 ± 5 km/s/Mpc
-  - [ ] Evaluar sensibilidad de otros observables a variaciones paramétricas
-  - [ ] Determinar incertidumbres y degeneraciones en el ajuste
-  - **Entregable**: Documento `calibracion_h0.md` con parámetros óptimos
-  - **Criterio de Completitud**: Valores definidos de (R, ω₄D) para uso estándar
+- [x] **2.2.1** Descubrimiento de la Degeneración del Modelo ✅ COMPLETADA
+  - [x] **Estrategia**: Intentar romper la relación `(R, ω₄D)` usando una segunda observación independiente: las curvas de rotación de galaxias (datos de SPARC para UGC 128).
+  - [x] Implementar un optimizador para encontrar el par `(R, ω₄D)` que satisfaga ambas observaciones simultáneamente.
+  - [x] **Hallazgo Crítico**: Se descubre que el modelo es **degenerado**. Ambas observaciones (precesión de Mercurio y curvas de rotación) dependen del mismo término combinado `K = ω₄D² * R³`. Esto hace imposible resolver `R` y `ω₄D` por separado con estas dos mediciones.
+  - **Entregable**: Script [`analyze_galaxy_rotation_curve.py`](computational_implementation/analysis_tools/analyze_galaxy_rotation_curve.py) y la cuantificación de la constante dinámica `K_dinamica ≈ 1.30e+17 m³/s²`.
+  - **Criterio de Completitud**: Identificación y cuantificación de la degeneración del modelo. ✅ CUMPLIDO.
 
-- [ ] **2.2.3** Validación con Datos de Estructura a Gran Escala
-  - [ ] Comparar predicciones del modelo con observaciones BAO (Baryon Acoustic Oscillations)
-  - [ ] Evaluar consistencia con mediciones de supernovas tipo Ia
-  - [ ] Analizar compatibilidad con datos de lensing gravitacional débil
-  - **Entregable**: Reporte `validacion_estructura_granescala.md`
-  - **Criterio de Completitud**: Consistencia demostrada con al menos 2 observables independientes
+- [x] **2.2.2** Acotación de Parámetros con Datos Cosmológicos (Planck) ✅ COMPLETADA
+  - [x] **Estrategia**: Utilizar una tercera observación, independiente de las anteriores, para romper (o acotar) la degeneración. Se utilizan los datos del satélite Planck sobre la planitud del universo.
+  - [x] La observación de Planck (`Ω_k ≈ 0`) implica que el radio de curvatura del universo es inmenso, estableciendo una **cota inferior** para `R` (al menos ~1.6 veces el diámetro del universo observable).
+  - [x] Combinar la cota inferior de `R` con el valor de la constante `K_dinamica` para derivar una **cota superior** para `ω₄D`.
+  - **Entregable**: Script [`estimate_initial_parameters.py`](computational_implementation/analysis_tools/estimate_initial_parameters.py) actualizado para calcular estas cotas.
+  - **Criterio de Completitud**: Cálculo de cotas numéricas para los parámetros. ✅ CUMPLIDO.
+  - **Resultado Clave**: El espacio de parámetros ha sido drásticamente restringido. El modelo requiere un **radio `R` muy grande (`≥ 1.4e+27 m`)** y una **velocidad angular `ω₄D` muy pequeña (`≤ 6.9e-33 rad/s`)**.
 
-**🎯 Resultado Esperado Tarea 2.2**: Parámetros del modelo calibrados y validados con múltiples observaciones cosmológicas.
+- [x] **2.2.3** Validación Cruzada con Constante de Hubble ✅ COMPLETADA
+  - [x] Utilizar el **rango de parámetros acotado** para analizar las predicciones del modelo sobre la constante de Hubble, `H₀`.
+  - [x] Verificar si los valores de `H₀` predichos son compatibles con las observaciones (ej. 70 ± 5 km/s/Mpc) usando [`verify_hubble_law.py`](experimental_validation/hubble_verification/verify_hubble_law.py).
+  - [x] **Hallazgo Crítico**: La validación cruzada **falla**. El rango de parámetros que satisface la planitud (`R` grande, `ω₄D` pequeño) predice una tasa de expansión (`H₀`) numéricamente indistinguible de cero, en fuerte tensión con el valor observado.
+  - **Entregable**: Documento [`validacion_h0.md`](validacion_h0.md) con el resultado del análisis. ✅ GENERADO
+  - **Criterio de Completitud**: Inconsistencia fundamental demostrada entre el régimen de parámetros de Planck y la constante de Hubble observada. ✅ CUMPLIDO
+
+- [ ] **2.2.4** Validación con Datos de Estructura a Gran Escala
+  - [ ] Comparar predicciones del modelo con observaciones BAO (Baryon Acoustic Oscillations).
+  - [ ] Evaluar consistencia con mediciones de supernovas tipo Ia.
+  - [ ] Analizar compatibilidad con datos de lensing gravitacional débil.
+  - **Entregable**: Reporte `validacion_estructura_granescala.md`.
+  - **Criterio de Completitud**: Consistencia demostrada con al menos 2 observables independientes.
+
+**🎯 Resultado Esperado Tarea 2.2**: Parámetros del modelo acotados y validados con múltiples observaciones cosmológicas, con una comprensión clara de las degeneraciones restantes.
 
 ---
 
