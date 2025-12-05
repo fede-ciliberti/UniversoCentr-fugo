@@ -4,7 +4,7 @@
 
 Este documento presenta la propuesta teórica para resolver la aparente contradicción entre la expansión isótropa observada y la anisotropía intrínseca del modelo del Universo Centrífugo. **Postulamos que la anisotropía no es un defecto del modelo, sino una característica fundamental y una predicción falsable única.**
 
-La propuesta central es que la **anisotropía en el tensor de energía-momento** [`T_μν`](../02_mathematical_development/energy_momentum_tensor.md) es la **firma matemática necesaria** de la rotación isoclínica 4D que genera la expansión uniforme observada.
+La propuesta central es que la **anisotropía en el tensor de energía-momento** [`T_μν`](../02_mathematical_development/energy_momentum_tensor.md) es la **firma matemática necesaria** de la rotación isoclínica 4D que genera la expansión uniforme observada en nuestro universo, modelado como un **3-toroide**.
 
 ---
 

@@ -68,10 +68,10 @@ graph TD
 
 | Ecuación | Derivación Completa | Implementación Numérica |
 |----------|---------------------|-------------------------|
-| **Ley de Hubble** | [`core_hypothesis.md:97-141`](scientific_publication/01_theoretical_foundations/core_hypothesis.md:97) | [`verify_hubble_law.py`](experimental_validation/hubble_verification/verify_hubble_law.py:1) |
-| **4-Velocidad** | [`energy_momentum_tensor.md:43-106`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:43) | [`calculate_4_velocity.py`](computational_implementation/core_calculations/calculate_4_velocity.py:1) |
-| **Tensor T^αβ** | [`energy_momentum_tensor.md:108-199`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:108) | [`calculate_stress_energy_tensor.py`](computational_implementation/core_calculations/calculate_stress_energy_tensor.py:1) |
-| **Proyección 3D** | [`energy_momentum_tensor.md:201-358`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:201) | [`calculate_projected_tensor.py`](computational_implementation/core_calculations/calculate_projected_tensor.py:1) |
+| **Ley de Hubble** | [`core_hypothesis.md:97-141`](scientific_publication/01_theoretical_foundations/core_hypothesis.md:97) | [`verify_hubble_law_final.py`](experimental_validation/hubble_verification/verify_hubble_law_final.py:1) |
+| **4-Velocidad** | [`energy_momentum_tensor.md:43-106`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:43) | [`run_complete_simulation.py`](computational_implementation/simulations/run_complete_simulation.py:1) |
+| **Tensor T^αβ** | [`energy_momentum_tensor.md:108-199`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:108) | [`run_complete_simulation.py`](computational_implementation/simulations/run_complete_simulation.py:1) |
+| **Proyección 3D** | [`energy_momentum_tensor.md:201-358`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:201) | [`run_complete_simulation.py`](computational_implementation/simulations/run_complete_simulation.py:1) |
 | **Einstein** | [`energy_momentum_tensor.md:360-394`](scientific_publication/02_mathematical_development/energy_momentum_tensor.md:360) | [`run_complete_simulation.py`](computational_implementation/simulations/run_complete_simulation.py:1) |
 
 ---
@@ -136,28 +136,14 @@ graph TD
 
 ```bash
 # Simulación completa automatizada
-cd computational_implementation/simulations/
-python run_complete_simulation.py
-
-# Simulación optimizada para tu sistema
-python run_optimized_simulation.py
-
-# Solo cálculos matemáticos fundamentales
-cd ../core_calculations/
-python calculate_4_velocity.py
-python calculate_stress_energy_tensor.py
+python computational_implementation/simulations/run_complete_simulation.py
 ```
 
 ### Para Observadores - Verificación Experimental
 
 ```bash
 # Verificación de la Ley de Hubble
-cd experimental_validation/hubble_verification/
-python verify_hubble_law.py
-
-# Análisis de convergencia numérica
-cd ../convergence_analysis/
-python analyze_convergence.py
+python experimental_validation/hubble_verification/verify_hubble_law_final.py
 ```
 
 ---
@@ -238,15 +224,13 @@ python analyze_convergence.py
 ## 📞 Información del Proyecto
 
 **Iniciado**: Junio 19, 2025  
-**Última actualización**: Junio 28, 2025  
-**Estado**: Investigación activa con resultados validados  
+**Última actualización**: Diciembre 04, 2025
+**Estado**: Investigación activa con resultados validados
 **Licencia**: Disponible para uso académico y científico
 
 ### Archivos Clave de Referencia
 
-- [`PLAN_REORGANIZACION_EJECUTIVO.md`](PLAN_REORGANIZACION_EJECUTIVO.md) - Plan de organización científica
-- [`plan_reorganizacion_cientifica_completo.md`](plan_reorganizacion_cientifica_completo.md) - Estrategia de publicación detallada
-- [`requirements.txt`](requirements.txt) - Dependencias del sistema
+ - [`requirements.txt`](requirements.txt) - Dependencias del sistema
 
 ---
 

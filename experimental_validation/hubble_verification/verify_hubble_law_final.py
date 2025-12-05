@@ -84,12 +84,20 @@ class FinalHubbleLawVerifier:
             data = np.load(filename, allow_pickle=True)
             print(f"📁 Archivo cargado: {filename}")
             print(f"🔑 Claves disponibles: {list(data.keys())}")
+
+            # Extraer metadatos de la simulación si existen
+            topology = data.get('topology', 'sphere') # Asumir esfera si no se especifica
+            grid_shape = data.get('grid_shape', None)
             
+            print(f"   • Topología detectada: {topology.capitalize()}")
+            if grid_shape is not None:
+                print(f"   • Dimensiones de la grilla: {grid_shape}")
+
             # Análisis según el tipo de archivo
             if 'metric_invariants' in data.keys():
-                return self.analyze_metric_invariants_data(data, description)
+                return self.analyze_metric_invariants_data(data, description, topology, filename)
             elif 'metric_evolution' in data.keys():
-                return self.analyze_full_evolution_data(data, description)
+                return self.analyze_full_evolution_data(data, description, topology, filename)
             else:
                 print(f"⚠️ Formato de archivo no reconocido")
                 return None
@@ -98,13 +106,15 @@ class FinalHubbleLawVerifier:
             print(f"❌ Error cargando {filename}: {e}")
             return None
     
-    def analyze_metric_invariants_data(self, data, description):
+    def analyze_metric_invariants_data(self, data, description, topology, filename):
         """
         Analiza datos basados en invariantes métricos (formato 256³).
         
         Args:
             data: Datos cargados del archivo NPZ
             description (str): Descripción del conjunto de datos
+            topology (str): Topología de la simulación ('sphere' o 'torus')
+            filename (str): Nombre del archivo de origen
         
         Returns:
             dict: Resultados del análisis
@@ -193,12 +203,19 @@ class FinalHubbleLawVerifier:
             'expansion_detected': expansion_detected,
             'expansion_type': expansion_type,
             'data_quality': data_quality,
-            'noise_level': noise_level
+            'noise_level': noise_level,
+            'topology': topology
         }
     
-    def analyze_full_evolution_data(self, data, description):
+    def analyze_full_evolution_data(self, data, description, topology, filename):
         """
         Analiza datos de evolución completa (formato 32³).
+        
+        Args:
+            data: Datos cargados del archivo NPZ
+            description (str): Descripción del conjunto de datos
+            topology (str): Topología de la simulación ('sphere' o 'torus')
+            filename (str): Nombre del archivo de origen
         """
         print(f"📊 ANÁLISIS DE EVOLUCIÓN COMPLETA")
         print("=" * 40)
@@ -243,7 +260,8 @@ class FinalHubbleLawVerifier:
             'hubble_rates': hubble_rates,
             'stable_hubble': stable_hubble,
             'hubble_std': hubble_std,
-            'expansion_detected': expansion_detected
+            'expansion_detected': expansion_detected,
+            'topology': topology
         }
     
     def create_invariants_plot(self, times, invariants, scale_factors, hubble_rates, 
@@ -357,6 +375,9 @@ Este reporte presenta el análisis final de la evidencia de expansión cosmológ
 ### {results['description']}
 **Archivo:** `{filename}`
 
+**Metadatos de Simulación:**
+- **Topología:** {results.get('topology', 'Esfera (asumida)').capitalize()}
+
 **Resultados:**
 - **Tasa de Hubble:** {results['stable_hubble']:.8f} ± {results['hubble_std']:.8f}
 - **Expansión detectada:** {'✅ SÍ' if results['expansion_detected'] else '❌ NO'}
@@ -366,6 +387,11 @@ Este reporte presenta el análisis final de la evidencia de expansión cosmológ
 **Interpretación:**
 """
             
+            if results.get('topology') == 'torus':
+                report_content += """
+**Nota sobre Topología Toroidal:** El análisis actual se basa en el determinante de la métrica, una propiedad global que asume homogeneidad. Si bien este método es válido para medir la expansión del volumen total, no captura efectos locales complejos ni el cálculo de distancias geodésicas propias de una topología toroidal. Los resultados deben interpretarse como una medida de la expansión promedio del espacio.
+"""
+
             if results['expansion_detected']:
                 if results['stable_hubble'] > 0:
                     report_content += f"""

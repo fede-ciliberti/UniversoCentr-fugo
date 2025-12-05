@@ -10,9 +10,9 @@ La conjetura de que el universo observable es una manifestación tridimensional 
 
 La conjetura se formaliza mediante:
 
-- **Espacio base:** 4-esfera S³ embebida en ℝ⁴ con radio R₄D
+- **Espacio base:** 3-toroide T³ embebido en ℝ⁴ con radio R₄D
 - **Rotación:** Velocidad angular ω₄D en el grupo SO(4) ≅ (SU(2) × SU(2))/Z₂
-- **Proyección:** Mapeo estereográfico P: S³ → ℝ³ que genera el universo observable
+- **Proyección:** Mapeo estereográfico P: T³ → ℝ³ que genera el universo observable
 - **Expansión:** H₀ = (ω₄D · R₄D)/(2π) · f_geométrico
 
 ### 2. Ecuaciones Fundamentales y Predicciones
@@ -23,7 +23,7 @@ La conjetura se formaliza mediante:
 ```
 H₀ = (ω₄D · R₄D)/(2π) · f_estereográfico
 ```
-Donde `ω₄D` es la velocidad angular 4D, `R₄D` es el radio de la 4-esfera y `f_estereográfico ≈ 0.5` es un factor geométrico. Para H₀ ≈ 70 km/s/Mpc, esto implica `ω₄D · R₄D ≈ 1.45 × 10⁻¹⁷ m/s`.
+Donde `ω₄D` es la velocidad angular 4D, `R₄D` es el radio de la 3-toroide y `f_geométrico_toroidal` es un factor geométrico. Para H₀ ≈ 70 km/s/Mpc, esto implica `ω₄D · R₄D ≈ 1.45 × 10⁻¹⁷ m/s` (ajustado por `f_geométrico_toroidal`).
 
 **Relación tiempo-distancia modificada:** A escalas cosmológicas, se predice una desviación de la linealidad estricta:
 ```
@@ -35,9 +35,9 @@ Donde `α` es un parámetro de curvatura hiperdimensional medible.
 
 **Patrón de rotación proyectada:** La función de correlación angular del CMB debe contener términos únicos de orden superior.
 ```
-C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
+C(θ) = C₀ + A_T³ · f(θ) + B_T³ · g(θ)  (donde f y g son funciones que describen patrones de correlación angular específicos de la topología toroidal)
 ```
-**Eje preferencial observable:** El eje de rotación 4D se manifestaría como una dirección preferencial en el cielo con simetría cuádruple, un gradiente de temperatura específico y patrones de polarización correlacionados.
+Eje preferencial observable: El eje de rotación 4D se manifestaría como una dirección preferencial en el cielo, con patrones de correlación angular y de polarización específicos de la topología toroidal, no necesariamente una simetría cuádruple simple.
 
 #### 2.3 Variaciones Temporales de H₀
 
@@ -62,7 +62,7 @@ C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
 ### 4.1 Experimentos Inmediatos (2025-2027)
 
 1. **Reánalisis de datos Planck/WMAP**
-   - Búsqueda de patrones cuádruples específicos
+   - Búsqueda de patrones específicos específicos
    - Identificación de eje preferencial de rotación
    - Análisis estadístico de correlaciones de orden superior
 
@@ -90,7 +90,7 @@ C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
 
 ### 5.1 El modelo será REFUTADO si:
 
-1. **No se detectan anisotropías cuádruples** en el CMB con la sensibilidad esperada
+1. **No se detectan patrones de correlación angular específicos de la topología toroidal** en el CMB con la sensibilidad esperada
 2. **H₀ es perfectamente constante** durante observaciones de décadas
 3. **No hay correlaciones direccionales** en estructuras a gran escala
 4. **La energía rotacional calculada** no coincide con observaciones de materia oscura
@@ -112,7 +112,7 @@ C(θ) = C₀ + A₄D · cos(4θ) + B₄D · cos(8θ)
 
 ### 6.2 Predicciones Distintivas
 
-- **Patrones geométricos específicos** no explicables por modelos alternativos
+- **Patrones de correlación angular específicos de la topología toroidal** no explicables por modelos alternativos
 - **Escalas temporales características** verificables observacionalmente
 - **Relaciones cuantitativas precisas** entre parámetros independientes
 

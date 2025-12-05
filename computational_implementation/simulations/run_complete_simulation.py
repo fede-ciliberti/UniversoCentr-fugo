@@ -71,12 +71,12 @@ def main():
         print("\n📦 PASO 1: INSTALACIÓN DE DEPENDENCIAS")
         print("=" * 40)
         
-        if not run_command("python notebooks/install_simulation_deps.py", 
-                          "Instalando dependencias"):
+        if not run_command("python computational_implementation/simulations/install_simulation_deps.py",
+                           "Instalando dependencias"):
             return False
         
         print("\n🔬 Ejecutando test de rendimiento...")
-        run_command("python notebooks/test_performance.py", 
+        run_command("python computational_implementation/analysis_tools/test_performance.py",
                    "Test de rendimiento del sistema", critical=False)
     else:
         print("\n⏭️  PASO 1: OMITIDO - Instalación de dependencias")
@@ -86,8 +86,8 @@ def main():
         print("\n🎯 PASO 2: OPTIMIZACIÓN DE PARÁMETROS")
         print("=" * 40)
         
-        if not run_command("python notebooks/optimize_simulation_params.py",
-                          "Optimizando parámetros del sistema"):
+        if not run_command("python computational_implementation/simulations/optimize_simulation_params.py",
+                           "Optimizando parámetros del sistema"):
             return False
     else:
         print("\n⏭️  PASO 2: OMITIDO - Optimización de parámetros")
@@ -101,17 +101,17 @@ def main():
         print("ℹ️  Usando datos iniciales existentes")
     else:
         print("🔄 Generando datos iniciales...")
-        if not run_command("python notebooks/setup_numerical_simulation.py",
-                          "Generando datos iniciales"):
+        if not run_command("python computational_implementation/simulations/setup_numerical_simulation.py",
+                           "Generando datos iniciales"):
             return False
-    
-    # PASO 4: Ejecutar simulación
-    print("\n🚀 PASO 4: EJECUCIÓN DE SIMULACIÓN")
-    print("=" * 40)
-    
-    # Decidir qué script ejecutar
-    optimized_script = "run_optimized_simulation.py"
-    default_script = "notebooks/run_numerical_simulation.py"
+     
+     # PASO 4: Ejecutar simulación
+     print("\n🚀 PASO 4: EJECUCIÓN DE SIMULACIÓN")
+     print("=" * 40)
+     
+     # Decidir qué script ejecutar
+     optimized_script = "run_optimized_simulation.py"
+    default_script = "computational_implementation/simulations/run_numerical_simulation.py"
     
     if os.path.exists(optimized_script) and not args.skip_optimize:
         simulation_cmd = f"python {optimized_script}"

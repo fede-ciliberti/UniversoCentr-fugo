@@ -8,3 +8,5 @@ sympy
 astropy
 seaborn
 ipywidgets
+
+tqdm
