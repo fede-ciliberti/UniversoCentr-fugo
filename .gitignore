@@ -144,3 +144,4 @@ trash/
 # Archivos de configuración específicos que pueden contener datos sensibles
 *.env
 .env.*
+checkpoints

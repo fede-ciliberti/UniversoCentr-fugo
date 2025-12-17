@@ -272,10 +272,10 @@ if __name__ == "__main__":
     main()
 '''
     
-    with open("notebooks/test_performance.py", "w") as f:
+    with open("computational_implementation/analysis_tools/test_performance.py", "w") as f:
         f.write(test_script)
-    
-    print("✅ Script de test de rendimiento creado: notebooks/test_performance.py")
+
+    print("✅ Script de test de rendimiento creado: computational_implementation/analysis_tools/test_performance.py")
 
 def main():
     """Función principal de instalación"""
@@ -308,8 +308,8 @@ def main():
     
     print("\n✅ Instalación completada exitosamente!")
     print("\n📋 Próximos pasos:")
-    print("   1. Ejecute: python notebooks/test_performance.py")
-    print("   2. Luego: python notebooks/run_numerical_simulation.py")
+    print("   1. Ejecute: python computational_implementation/analysis_tools/test_performance.py")
+    print("   2. Luego: python computational_implementation/simulations/run_numerical_simulation.py")
     print("\n💡 Consejos:")
     print("   - Use resolución 32³ para pruebas iniciales")
     print("   - Monitore RAM durante la simulación")

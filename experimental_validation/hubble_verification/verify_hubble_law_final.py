@@ -37,6 +37,7 @@ class FinalHubbleLawVerifier:
         print("=" * 70)
         
         files_to_analyze = [
+            ('simulation_results_gpu.npz', 'Simulación GPU (resultados actuales)'),
             ('simulation_results_256.npz', 'Simulación 256³ (muestras)'),
             ('simulation_results.npz', 'Simulación 32³ (completa)')
         ]

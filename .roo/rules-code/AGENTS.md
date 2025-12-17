@@ -19,3 +19,15 @@ This file provides guidance to agents when working with code in this repository.
 ## Code Style & Conventions
 
 - **No Formal Linter/Formatter**: There are no configuration files for tools like Black, Flake8, or Prettier. Code style is inconsistent. Follow the style of the file you are editing.
+
+## Lecciones Aprendidas (Auto-generadas)
+
+**Práctica de Búsqueda Sistemática:** Para análisis de documentación técnica, implementar búsqueda con múltiples patrones de regex que cubran todas las variantes terminológicas del concepto objetivo. Esto maximiza la cobertura y minimiza falsos negativos en la identificación de referencias.
+
+**Clasificación por Prioridad:** Establecer criterios claros de priorización basados en impacto conceptual y ubicación en la documentación. La categorización en niveles (ALTA/MEDIA/BAJA) facilita la implementación gradual y enfocada de actualizaciones.
+
+**Generación de Informes:** Documentar sistemáticamente cada referencia con ubicación exacta, contexto, impacto y sugerencia de adaptación. Esto crea una base clara para implementación futura y asegura trazabilidad completa.
+
+**Verificación de Cobertura:** Validar que la búsqueda cubra todos los formatos de archivo relevantes y considere posibles referencias en código fuente o comentarios. La omisión de formatos puede generar inconsistencias residuales.
+
+**Análisis de Impacto en Código:** Al realizar búsquedas terminológicas en documentación técnica, evaluar siempre el impacto potencial en el código fuente asociado. La actualización de documentación debe alinearse con la implementación técnica para evitar divergencias conceptuales que puedan afectar la ejecución o comprensión del sistema.

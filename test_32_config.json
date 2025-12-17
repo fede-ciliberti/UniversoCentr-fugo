@@ -1,0 +1,19 @@
+{
+  "grid_size": 32,
+  "domain_size": 20.0,
+  "dt": 0.01,
+  "t_final": 1.0,
+  "output_every": 1,
+  "cfl_factor": 0.25,
+  "dissipation": 0.01,
+  "R_param": 1.0,
+  "omega_4d_param": 0.1,
+  "max_cores": 12,
+  "use_numba": true,
+  "save_checkpoints": true,
+  "checkpoint_every": 10,
+  "verbose": true,
+  "estimated_runtime_minutes": 0.1,
+  "estimated_memory_gb": 0.1,
+  "system_profile": "mid_range"
+}

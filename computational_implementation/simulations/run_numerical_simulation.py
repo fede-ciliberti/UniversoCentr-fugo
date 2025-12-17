@@ -551,7 +551,7 @@ def main():
     data_file = "simulation_initial_data.npz"
     if not os.path.exists(data_file):
         print(f"❌ Error: No se encontró {data_file}")
-        print("   Ejecute primero: python notebooks/setup_numerical_simulation.py")
+        print("   Ejecute primero: python computational_implementation/simulations/setup_numerical_simulation.py")
         sys.exit(1)
     
     try:

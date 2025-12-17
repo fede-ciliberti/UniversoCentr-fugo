@@ -101,6 +101,24 @@ graph TD
 | [`simulations/`](computational_implementation/simulations/) | Sistema completo de simulación BSSN | ✅ Convergente |
 | [`analysis_tools/`](computational_implementation/analysis_tools/) | Herramientas de análisis y diagnóstico | ✅ Funcional |
 
+#### 🚀 Novedades: Sistema de Checkpoints y Aceleración GPU
+
+**Nuevos componentes implementados:**
+
+- **[`checkpoint_manager.py`](computational_implementation/simulations/checkpoint_manager.py)**: Sistema robusto de checkpoints con validación de integridad
+- **[`run_simulation_windows_gpu.py`](computational_implementation/simulations/run_simulation_windows_gpu.py)**: Simulador multiplataforma con aceleración GPU
+- **[`install_windows_gpu.py`](computational_implementation/simulations/install_windows_gpu.py)**: Instalador automático para Windows
+- **[`benchmark_gpu_cpu.py`](computational_implementation/simulations/benchmark_gpu_cpu.py)**: Suite de benchmarking CPU vs GPU
+
+**Características principales:**
+- ✅ **Checkpoints automáticos** cada N pasos con compresión y validación SHA-256
+- ✅ **Recuperación inteligente** que detecta checkpoints existentes
+- ✅ **Aceleración GPU** con CuPy (NVIDIA) y PyOpenCL (genérico)
+- ✅ **Compatibilidad Windows** con instalador automático y ejecutable portable
+- ✅ **Benchmarking integrado** para comparar rendimiento CPU vs GPU
+
+**Documentación completa**: [`GPU_CHECKPOINT_GUIDE.md`](docs/GPU_CHECKPOINT_GUIDE.md)
+
 ### 🔬 Validación Experimental
 
 **Ubicación**: [`experimental_validation/`](experimental_validation/)
@@ -137,6 +155,22 @@ graph TD
 ```bash
 # Simulación completa automatizada
 python computational_implementation/simulations/run_complete_simulation.py
+
+# Simulación con checkpoints y aceleración GPU (recomendado)
+python computational_implementation/simulations/run_simulation_windows_gpu.py
+
+# Benchmark de rendimiento CPU vs GPU
+python computational_implementation/simulations/benchmark_gpu_cpu.py
+```
+
+### Para Usuarios Windows - Instalación y Ejecución
+
+```bash
+# Instalación automática para Windows con soporte GPU
+python computational_implementation/simulations/install_windows_gpu.py
+
+# Ejecución mediante script por lotes
+run_simulation.bat
 ```
 
 ### Para Observadores - Verificación Experimental
@@ -223,14 +257,16 @@ python experimental_validation/hubble_verification/verify_hubble_law_final.py
 
 ## 📞 Información del Proyecto
 
-**Iniciado**: Junio 19, 2025  
-**Última actualización**: Diciembre 04, 2025
-**Estado**: Investigación activa con resultados validados
+**Iniciado**: Junio 19, 2025
+**Última actualización**: Diciembre 14, 2025
+**Estado**: Investigación activa con resultados validados + sistema GPU/checkpoints
 **Licencia**: Disponible para uso académico y científico
 
 ### Archivos Clave de Referencia
 
- - [`requirements.txt`](requirements.txt) - Dependencias del sistema
+ - [`requirements.txt`](requirements.txt) - Dependencias del sistema (actualizado con GPU)
+ - [`docs/GPU_CHECKPOINT_GUIDE.md`](docs/GPU_CHECKPOINT_GUIDE.md) - Guía completa de GPU y checkpoints
+ - [`computational_implementation/simulations/run_simulation_windows_gpu.py`](computational_implementation/simulations/run_simulation_windows_gpu.py) - Simulador principal con GPU
 
 ---
 
