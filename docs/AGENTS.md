@@ -42,12 +42,14 @@ docs/
 ├── informe_materia_oscura_elastica.md           # Curvas de rotación galáctica planas sin materia oscura
 ├── plan_simulacion_elastica.md                  # Plan maestro de simulación elástica de membrana
 │
+├── ── DOCUMENTACIÓN DE APOYO (ex-huérfanos integrados, junio 2026) ──
+├── formalismo_dbi_energia_oscura.md             # Extensión DBI para energía oscura (w=-1 dinámico)
+├── acoplamiento_masa_inercia_centrifuga.md      # Retroalimentación masa-vacío en momento angular
+├── calculo_radio_tamano_universo.md             # Cálculo observacional de R₀ y volumen S³
+│
 └── ── SUBDIRECTORIO DE SIMULACIÓN ──
-    └── simulacion_256cubed/                     # Especificaciones y troubleshooting de simulación 256³
-        ├── README_256cubed.md                   #README del subdirectorio 256³
-        ├── SPECS_256cubed.md                    # Especificaciones técnicas hardware/software
-        ├── TROUBLESHOOTING_256cubed.md          # Resolución de problemas comunes
-        └── TROUBLESHOOTING_PARALLELIZATION.md   # Problemas específicos de paralelización
+    └── simulacion_256cubed/
+        └── README_256cubed.md                   # Transición BSSN → FFT (único archivo real)
 ```
 
 ## WHERE TO LOOK
@@ -74,6 +76,9 @@ docs/
 | **Precesión perihelio** | `informe_precesion_perihelio.md` | Test solar |
 | **Materia oscura elástica** | `informe_materia_oscura_elastica.md` | Astrofísica galáctica |
 | **Plan simulación maestra** | `plan_simulacion_elastica.md` | Plan maestro |
+| **Energía oscura DBI** | `formalismo_dbi_energia_oscura.md` | Extensión teórica |
+| **Acoplamiento masa-vacío** | `acoplamiento_masa_inercia_centrifuga.md` | Extensión teórica |
+| **Radio del universo** | `calculo_radio_tamano_universo.md` | Cálculo observacional |
 | **Simulación 256³** | `simulacion_256cubed/` | Subdirectorio técnico |
 
 ## CONVENTIONS
@@ -82,7 +87,13 @@ docs/
 - **Documentos temáticos sin numeración**: Los archivos especializados (formulación, informes) se identifican por nombre descriptivo.
 - **Markdown puro**: Todos los documentos están en formato Markdown con ecuaciones LaTeX ($...$ y $$...$$).
 - **Documentación viva**: Estos archivos evolucionan con la investigación y las auditorías adversariales.
-- **Última actualización estructural**: Junio 2026 (post-auditoría adversarial integral).
+- **Última actualización estructural**: Junio 2026 (reorganización integral + integración de docs de apoyo).
+
+## NOTA HISTÓRICA (Junio 2026)
+
+El archivo `informe_resolucion_auditoria.md` fue movido a `archive/audits/` durante la reorganización integral de junio 2026. Era un documento meta (respuesta a auditoría adversarial de 4ta vuelta) que no alimentaba la investigación activa. Se conserva como registro histórico del proceso de validación científica.
+
+Los documentos `formalismo_dbi_energia_oscura.md`, `acoplamiento_masa_inercia_centrifuga.md` y `calculo_radio_tamano_universo.md` eran previamente "huérfanos" (sin referencias cruzadas). En junio 2026 se integraron como **documentación de apoyo** con links bidireccionales desde/hacia los docs principales.
 
 ## ANTI-PATTERNS
 

@@ -18,6 +18,8 @@ Para calcular este radio hiperdimensional $R_0$ (la distancia desde el centro de
 1.  **El Método Cosmológico:** Midiendo la curvatura del espacio-tiempo a gran escala mediante el Fondo Cósmico de Microondas (CMB).
 2.  **El Método de Gravedad Emergente:** Midiendo la rigidez elástica y la tensión de la brana de forma local mediante experimentos de laboratorio y ondas gravitacionales.
 
+**Relación con la conservación del momento angular**: El valor de $R_0$ determina la escala cosmológica que entra en la evolución de la velocidad angular $\omega_{4D}(t) \propto 1/R(t)^2$. Para entender cómo la conservación del momento angular en el Bulk garantiza la estabilidad de $G_{eff}$ a lo largo de la historia cósmica, ver [`conservacion_momento_inercia_geff.md`](conservacion_momento_inercia_geff.md).
+
 ---
 
 ## 📐 1. GEOMETRÍA DE LA 3-ESFERA Y VOLUMEN TOTAL COSMOLÓGICO

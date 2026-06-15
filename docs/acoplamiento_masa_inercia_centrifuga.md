@@ -53,7 +53,11 @@ $$I(R) = M_m R^2 + \left( \frac{2\pi^2 T_3}{c^2} \right) R^5$$
 
 ### Conservación del Momento Angular ($L = I \omega_{4D} = \text{cte}$)
 
-Dado que no existen torques externos en el Bulk, el momento angular total del cosmos se conserva de forma ultra-estricta. Esto obliga a que la velocidad angular de giro $\omega_{4D}(t)$ se acople dinámicamente de forma automática al "peso" del universo:
+Dado que no existen torques externos en el Bulk, el momento angular total del cosmos se conserva de forma ultra-estricta. Esto obliga a que la velocidad angular de giro $\omega_{4D}(t)$ se acople dinámicamente de forma automática al "peso" del universo.
+
+**Nota**: Este documento extiende el análisis presentado en [`conservacion_momento_inercia_geff.md`](conservacion_momento_inercia_geff.md), donde se demostró la estabilidad de $G_{eff}$ asumiendo masa inercial constante $M$. Aquí incorporamos la retroalimentación de la masa-vacío variable $M_{\text{total}}(R)$.
+
+La relación fundamental es:
 
 $$\omega_{4D}(t) = \frac{L}{I(R)} = \frac{L}{M_m R^2 + \left( \frac{2\pi^2 T_3}{c^2} \right) R^5}$$
 

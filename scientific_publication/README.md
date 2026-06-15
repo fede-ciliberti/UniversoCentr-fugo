@@ -2,329 +2,176 @@
 
 ## Resumen Ejecutivo
 
-Esta implementación constituye un marco científico completo para la **Hipótesis del Universo Centrífugo**, una propuesta teórica revolucionaria que explica la expansión cosmológica como la proyección tridimensional de rotaciones en un espacio tetradimensional. El proyecto propone que el universo observable constituye una 3-esfera (S³) embebida en ℝ⁴, donde la rotación hiperdimensional genera los fenómenos observados como expansión acelerada del cosmos, proporcionando una explicación unificada para la energía oscura (~68%) y la materia oscura (~27%) sin requerir componentes exóticos.
+Este directorio contiene el **manuscrito formal** de la Hipótesis del Universo Centrífugo, estructurado para publicación en revistas científicas de alto impacto (JCAP, Physical Review D, Classical and Quantum Gravity).
 
-**Estado del Proyecto:** Marco teórico completo con predicciones observacionales específicas listas para verificación experimental (2025-2035).
+La teoría propone que el universo observable es una 3-esfera (S³) embebida en un espacio euclidiano 4D (ℝ⁴) que rota con velocidad angular ω₄D. La expansión cosmológica observada (Ley de Hubble) emerge como la proyección 3D de esta rotación hiperdimensional, proporcionando una explicación unificada para:
 
----
+- **Energía oscura (~68%)**: Fuerza centrífuga de rotación isoclínica + tensión de brana
+- **Materia oscura (~27%)**: Aceleración inercial del Bulk (a_c ≈ 4.8×10⁻¹⁰ m/s²)
+- **Gravedad local**: Deformación elástica de brana por empuje centrífugo
 
-## Índice General
-
-### 📚 **Secciones Principales**
-
-- [1. Fundamentos Teóricos](#1-fundamentos-teóricos-01_theoretical_foundations)
-- [2. Desarrollo Matemático](#2-desarrollo-matemático-02_mathematical_development)
-- [3. Validación Numérica](#3-validación-numérica-03_numerical_validation)
-- [4. Predicciones Observacionales](#4-predicciones-observacionales-04_observational_predictions)
-- [5. Verificación Experimental](#5-verificación-experimental-05_experimental_verification)
-- [6. Implicaciones y Conclusiones](#6-implicaciones-y-conclusiones-06_implications_and_conclusions)
-- [7. Apéndices](#7-apéndices-appendices)
+**Estado actual (junio 2026)**: Marco teórico completo, validación numérica FFT hasta 256³ (>99.8% correlación con Schwarzschild), predicciones observacionales cuantitativas desarrolladas.
 
 ---
 
-## 1. Fundamentos Teóricos (`01_theoretical_foundations/`)
+## Estructura del Manuscrito
 
-### 📋 **Contenido de la Sección**
+### ✅ Secciones Completadas
 
-#### [`core_hypothesis.md`](01_theoretical_foundations/core_hypothesis.md)
-- **Hipótesis central del Universo Centrífugo**
-- **Postulados geométricos fundamentales:** G1, D1, O1
-- **Sistema de coordenadas y métrica de la 3-esfera**
-- **Justificación conceptual mediante analogías dimensionales**
-- **Distinción respecto a modelos cosmológicos existentes**
-- **Esquema de validación propuesto**
+| Sección | Archivo | Contenido | Tamaño |
+|---------|---------|-----------|--------|
+| **1. Fundamentos Teóricos** | `01_theoretical_foundations/core_hypothesis.md` | Hipótesis central, postulados G1/D1/O1, métrica S³ | 33 KB |
+| **2. Desarrollo Matemático** | `02_mathematical_development/4d_rotation_dynamics.md` | Formalismo SO(4), rotación isoclínica, tensor T^μν | 33 KB |
+| **4. Predicciones Observacionales** | `04_observational_predictions/cosmological_parameters.md` | H₀, Ω_rot, Ω_k, w_eff, anisotropías CMB | 36 KB |
+| **5. Verificación Experimental** | `05_experimental_verification/falsifiability_criteria.md` | Criterios de refutación/confirmación | 22 KB |
+| **5. Verificación Experimental** | `05_experimental_verification/desi_2024_validation.md` | Validación con datos DESI 2024 | 13 KB |
 
-**Contribuciones Clave:**
-- Postulado G1: Universo como 3-esfera en ℝ⁴
-- Postulado D1: Rotación continua con velocidad angular ω₄D
-- Postulado O1: Restricción observacional a coordenadas proyectadas
-- Resolución de la crisis conceptual de la cosmología moderna
-- Eliminación de necesidad de energía oscura especulativa
+### ❌ Secciones No Desarrolladas
 
-#### [`mathematical_framework.md`](01_theoretical_foundations/mathematical_framework.md)
-- **Marco matemático fundamental**
-- **Notación tensorial rigurosa**
-- **Definiciones precisas de embebimiento S³ ⊂ ℝ⁴**
-
-#### Archivos Adicionales:
-- [`comparison_with_standard_model.md`](01_theoretical_foundations/comparison_with_standard_model.md)
-- [`dimensional_analysis.md`](01_theoretical_foundations/dimensional_analysis.md)
-
-### 🎯 **Objetivos Logrados**
-- ✅ Establecimiento de fundamentos conceptuales sólidos
-- ✅ Diferenciación clara del modelo ΛCDM estándar
-- ✅ Base teórica para desarrollo matemático riguroso
+| Sección | Estado | Notas |
+|---------|--------|-------|
+| **3. Validación Numérica** | NO EXISTE | Para validación numérica FFT completa, ver `docs/05_informe_simulacion_numerica.md` → `docs/12_validacion_plan_256cubed_completado.md` |
+| **6. Implicaciones y Conclusiones** | NO EXISTE | Pendiente de desarrollo para versión final del paper |
+| **Apéndices** | ELIMINADO | Eliminado en reorganización junio 2026 |
 
 ---
 
-## 2. Desarrollo Matemático (`02_mathematical_development/`)
+## Secuencia de Lectura Recomendada
 
-### 📋 **Contenido de la Sección**
+### Para Revisores / Lectores Nuevos
 
-#### [`4d_rotation_dynamics.md`](02_mathematical_development/4d_rotation_dynamics.md)
-**Marco Matemático Riguroso Completo**
+1. **Inicio conceptual**: [`01_theoretical_foundations/core_hypothesis.md`](01_theoretical_foundations/core_hypothesis.md)
+   - Postulados fundamentales (G1, D1, O1)
+   - Métrica de la 3-esfera en ℝ⁴
+   - Diferenciación vs ΛCDM
 
-**Resoluciones Críticas Logradas:**
-- ✅ **Problema 1 RESUELTO:** Circularidad matemática eliminada
-  - **Antes:** ω₄D = H₀ → H₀ = f(ω₄D) [tautología]
-  - **Después:** ω₄D = √(E_rotacional_4D / I₄D) → H₀ = ω₄D tan(ψ₀) [predicción]
+2. **Formalismo matemático**: [`02_mathematical_development/4d_rotation_dynamics.md`](02_mathematical_development/4d_rotation_dynamics.md)
+   - Grupo SO(4) ≅ SU(2) × SU(2)
+   - Rotación isoclínica pura
+   - Tensor energía-momento proyectado T_μν(efectivo)
 
-- ✅ **Problema 2 RESUELTO:** Conservación energía-momento demostrada
-  - Demostración analítica completa: ∇μT^μν = 0
+3. **Predicciones testables**: [`04_observational_predictions/cosmological_parameters.md`](04_observational_predictions/cosmological_parameters.md)
+   - Parámetros cosmológicos: H₀ = 70.2 ± 0.3 km/s/Mpc, Ω_rot = 0.274 ± 0.035
+   - Anisotropías CMB cuádruples: A₄D = 26.2 ± 3.8
+   - Escala de correlación fundamental: λ₄D = 1.53 ± 0.09 Gpc
 
-- ✅ **Problema 3 RESUELTO:** Métodos R₄D reconciliados
-  - Método principal + dos métodos de validación cruzada
+4. **Criterios de falsabilidad**: [`05_experimental_verification/falsifiability_criteria.md`](05_experimental_verification/falsifiability_criteria.md)
+   - Condiciones de refutación definitiva
+   - Condiciones de confirmación definitiva
+   - Cronograma de verificación (2025-2035)
 
-**Ecuaciones Fundamentales:**
-```
-ω₄D = √(E_rotacional_4D / I₄D)                    (MD.22)
-H₀ = -ω₄D tan(ψ₀)                                 (MD.33)
-ρ_rot = (M_total ω₄D²)/(10π² R₄D)                 (MD.40)
-R₄D = r_horizonte / cos(ψ_horizonte)              (MD.57)
-```
-
-#### Archivos Complementarios:
-- [`energy_momentum_tensor.md`](02_mathematical_development/energy_momentum_tensor.md)
-- [`field_equations.md`](02_mathematical_development/field_equations.md)
-- [`projection_mechanisms.md`](02_mathematical_development/projection_mechanisms.md)
-- [`so4_group_theory.md`](02_mathematical_development/so4_group_theory.md)
-
-### 🎯 **Objetivos Logrados**
-- ✅ Marco matemático riguroso libre de circularidades
-- ✅ Demostraciones analíticas de conservación y límites físicos
-- ✅ Base sólida para implementación numérica
+5. **Validación con datos reales**: [`05_experimental_verification/desi_2024_validation.md`](05_experimental_verification/desi_2024_validation.md)
+   - Comparación con datos DESI 2024
+   - Restricciones observacionales
 
 ---
 
-## 3. Validación Numérica (`03_numerical_validation/`)
+## Relación con docs/ (Material de Trabajo)
 
-### 📋 **Contenido de la Sección**
+Este directorio (`scientific_publication/`) contiene el **manuscrito formal**. Para documentación de trabajo, metodologías detalladas e informes intermedios, ver `docs/`:
 
-#### [`simulation_methodology.md`](03_numerical_validation/simulation_methodology.md)
-- **Metodología de simulaciones numéricas**
-- **Condiciones iniciales para simulaciones 4D**
-- **Algoritmos de evolución temporal**
-- **Criterios de convergencia**
+| Manuscrito Formal (aquí) | Material de Trabajo (docs/) |
+|---|---|
+| `01_theoretical_foundations/core_hypothesis.md` | `01_marco_teorico.md`, `02_propuesta_investigacion.md` |
+| `02_mathematical_development/4d_rotation_dynamics.md` | `formulacion_matematica_rotacion_4d.md`, `ecuaciones_movimiento_rotacion_4d.md`, `conservacion_momento_inercia_geff.md` |
+| (validación numérica no incluida aquí) | `05_informe_simulacion_numerica.md` → `12_validacion_plan_256cubed_completado.md` |
+| `04_observational_predictions/cosmological_parameters.md` | `comparacion_curvas_expansion.md`, `informe_materia_oscura_elastica.md` |
+| `05_experimental_verification/*` | `informe_precesion_perihelio.md`, `fuerza_coriolis_4d_trayectorias.md` |
 
-#### Archivos Complementarios:
-- [`computational_implementation.md`](03_numerical_validation/computational_implementation.md)
-- [`convergence_analysis.md`](03_numerical_validation/convergence_analysis.md)
-- [`numerical_results.md`](03_numerical_validation/numerical_results.md)
-
-### 🎯 **Objetivos**
-- 🔄 Implementación computacional de ecuaciones 4D
-- 🔄 Validación numérica de predicciones teóricas
-- 🔄 Análisis de estabilidad y convergencia
+**Documentación de apoyo** (ex-huérfanos integrados en junio 2026):
+- `docs/formalismo_dbi_energia_oscura.md` — Acción DBI para w=-1 dinámico
+- `docs/acoplamiento_masa_inercia_centrifuga.md` — Retroalimentación masa-vacío
+- `docs/calculo_radio_tamano_universo.md` — Cálculo observacional de R₀
 
 ---
 
-## 4. Predicciones Observacionales (`04_observational_predictions/`)
+## Firmas Distintivas del Modelo
 
-### 📋 **Contenido de la Sección**
+### Predicciones Únicas (no explicables por ΛCDM estándar)
 
-#### [`cosmological_parameters.md`](04_observational_predictions/cosmological_parameters.md)
-**Predicciones Cuantitativas Específicas**
+1. **Simetría cuádruple universal**: Patrones cos(4θ), cos(8θ) en CMB, lensing y estructura a gran escala
+2. **Escala física fundamental**: λ₄D = 1.53 ± 0.09 Gpc (periodicidad en velocidades peculiares)
+3. **Eje preferencial multifenómeno**: Dirección común (l,b) = (264° ± 12°, -29° ± 8°) en CMB, estructura galáctica y flujos coherentes
+4. **Curvatura espacial negativa**: Ω_k = -0.089 ± 0.014 (conectada directamente con geometría S³)
 
-**Parámetros Cosmológicos Fundamentales:**
-- **H₀ = 70.2 ± 0.3 km/s/Mpc** (resolución parcial de tensión H₀)
-- **Ω_rot = 0.274 ± 0.035** (materia oscura desde energía rotacional)
-- **Ωₖ = -0.089 ± 0.014** (curvatura negativa característica)
-- **w_eff = -0.529 ± 0.084** (ecuación de estado diferenciada)
+### Impacto Científico Potencial
 
-**Señales Observacionales Específicas:**
-- **Anisotropías CMB cuádruples:** A₄D = 26.2 ± 3.8
-- **Escala de correlación fundamental:** λ₄D = 1.53 ± 0.09 Gpc
-- **Eje preferencial universal:** (l,b) = (264° ± 12°, -29° ± 8°)
-- **Velocidades coherentes:** v₄D = 216 ± 28 km/s
+**Si confirmado:**
+- Primera evidencia directa de dimensiones espaciales extra
+- Unificación de materia/energía oscura bajo un principio geométrico común
+- Revolución en cosmología fundamental y gravedad cuántica
 
-**Variaciones Temporales:**
-- **Evolución de H₀:** dH₀/dt = -2.52 × 10⁻³⁶ s⁻²
-- **Período rotacional:** T_rotación = 4.80 ± 0.26 Gyr
-
-#### Archivos Complementarios:
-- [`cmb_anisotropy_signatures.md`](04_observational_predictions/cmb_anisotropy_signatures.md)
-- [`dark_matter_energy_explanation.md`](04_observational_predictions/dark_matter_energy_explanation.md)
-- [`hubble_constant_variations.md`](04_observational_predictions/hubble_constant_variations.md)
-
-### 🎯 **Objetivos Logrados**
-- ✅ Predicciones cuantitativas específicas completamente desarrolladas
-- ✅ Diferenciación clara del modelo ΛCDM
-- ✅ Base sólida para verificación experimental
+**Si refutado:**
+- Fortalecimiento del modelo ΛCDM estándar
+- Refinamiento de criterios de falsabilidad en cosmología teórica
+- Metodología transferible a otros modelos emergentes
 
 ---
 
-## 5. Verificación Experimental (`05_experimental_verification/`)
+## Estado del Proyecto
 
-### 📋 **Contenido de la Sección**
+### ✅ Completado (Junio 2026)
 
-#### [`falsifiability_criteria.md`](05_experimental_verification/falsifiability_criteria.md)
-**Criterios de Falsabilidad Específicos**
+- Marco teórico riguroso y autoconsistente
+- Cambio de paradigma BSSN → FFT espectral completado
+- Solver FFT validado hasta 256³ (correlación >99.8% con Schwarzschild)
+- Tests físicos implementados: precesión, lensing, materia oscura, expansión
+- Predicciones observacionales cuantitativas desarrolladas
+- Criterios de falsabilidad objetivos establecidos
+- Reorganización integral del proyecto (consistencia total)
 
-**Criterios de REFUTACIÓN DEFINITIVA:**
-1. A₄D/C₀ < 3σ en CMB (factor >40 menor que predicción)
-2. Ausencia de correlaciones P₄ en LSS con >5σ
-3. No periodicidad λ₄D en velocidades peculiares con >3σ
-4. Ω_materia_oscura < 0.5 (inconsistente con Ω_rot = 0.79)
+### 🔄 En Desarrollo
 
-**Criterios de CONFIRMACIÓN DEFINITIVA:**
-1. Detección de eje preferencial común (coherencia <15° en 3+ observables)
-2. A₄D = (13.4 ± 5.0) × C₀ en anisotropías cuádruples
-3. Correlaciones galácticas A_rot = (1.3 ± 0.5) × 10⁻⁵
-4. Periodicidad velocidades λ₄D = 450 ± 100 Mpc, v₄D = 970 ± 300 km/s
+- Extensión a simulaciones multi-cuerpo y distribuciones galácticas completas
+- Análisis comparativo con datos CMB Planck
+- Cálculo del espectro de potencias P(k)
+- Preparación de manuscrito final para submission
 
-**Cronograma de Verificación:**
-- **2027:** Evidencia preliminar (∑ significancia >15σ)
-- **2030:** Evidencia robusta (∑ significancia >50σ)
-- **2035:** Confirmación definitiva (∑ significancia >150σ)
+### 📅 Próximos Hitos
 
-#### Archivos Complementarios:
-- [`proposed_experiments.md`](05_experimental_verification/proposed_experiments.md)
-- [`statistical_significance.md`](05_experimental_verification/statistical_significance.md)
-- [`data_analysis_protocols.md`](05_experimental_verification/data_analysis_protocols.md)
-
-### 🎯 **Objetivos Logrados**
-- ✅ Criterios objetivos de falsabilidad establecidos
-- ✅ Protocolos experimentales factibles definidos
-- ✅ Cronograma de decisión científica (2025-2035)
+- **Q3 2026**: Sistemas binarios de membrana (ondas gravitacionales emergentes)
+- **Q4 2026**: Simulación galáctica esférica (curvas de rotación con perfiles NFW)
+- **Q1 2027**: Simulación cosmológica de estructura a gran escala S³
+- **Q2 2027**: Análisis comparativo con datos CMB Planck
+- **2027-2030**: Caracterización con nuevas observaciones (Euclid, CMB-S4)
+- **2030-2035**: Decisión definitiva sobre validez del modelo
 
 ---
 
-## 6. Implicaciones y Conclusiones (`06_implications_and_conclusions/`)
+## Referencias Clave del Proyecto
 
-### 📋 **Contenido de la Sección**
+### Documentación Base (docs/)
 
-#### [`cosmological_impact.md`](06_implications_and_conclusions/cosmological_impact.md)
-- **Impacto en la cosmología moderna**
-- **Revolución paradigmática potencial**
+- [`docs/01_marco_teorico.md`](../docs/01_marco_teorico.md) — Marco teórico general
+- [`docs/02_propuesta_investigacion.md`](../docs/02_propuesta_investigacion.md) — Propuesta formal e hipótesis
+- [`docs/formulacion_matematica_rotacion_4d.md`](../docs/formulacion_matematica_rotacion_4d.md) — Formalismo SO(4) completo
+- [`docs/conservacion_momento_inercia_geff.md`](../docs/conservacion_momento_inercia_geff.md) — Estabilidad de G_eff (HUB central)
 
-#### Archivos Complementarios:
-- [`theoretical_consequences.md`](06_implications_and_conclusions/theoretical_consequences.md)
-- [`future_research_directions.md`](06_implications_and_conclusions/future_research_directions.md)
-- [`limitations_and_challenges.md`](06_implications_and_conclusions/limitations_and_challenges.md)
+### Validación Numérica (docs/)
 
-### 🎯 **Objetivos**
-- 📝 Análisis de impacto transformador en cosmología
-- 📝 Direcciones futuras de investigación
-- 📝 Limitaciones y desafíos identificados
+- [`docs/05_informe_simulacion_numerica.md`](../docs/05_informe_simulacion_numerica.md) — Primer informe del solver FFT
+- [`docs/11_plan_estrategico_256cubed_completo.md`](../docs/11_plan_estrategico_256cubed_completo.md) — Plan estratégico 256³
+- [`docs/12_validacion_plan_256cubed_completado.md`](../docs/12_validacion_plan_256cubed_completado.md) — Validación completada
 
----
+### Sistema de Notación
 
-## 7. Apéndices (`appendices/`)
-
-### 📋 **Contenido de la Sección**
-
-#### Materiales Suplementarios:
-- [`mathematical_proofs.md`](appendices/mathematical_proofs.md) - Demostraciones matemáticas detalladas
-- [`computational_code.md`](appendices/computational_code.md) - Implementaciones computacionales
-- [`supplementary_calculations.md`](appendices/supplementary_calculations.md) - Cálculos adicionales
+- **TF.X**: Ecuaciones de Fundamentos Teóricos
+- **MD.X**: Ecuaciones de Desarrollo Matemático
+- **OCP.X**: Ecuaciones de Predicciones Observacionales
+- **G1, D1, O1**: Postulados fundamentales (Geométrico, Dinámico, Observacional)
 
 ---
 
-## 🚀 Estado Actual del Proyecto
+## Licencia y Contribuciones
 
-### ✅ **Completado (2025)**
-- **Fundamentos teóricos sólidos** con postulados rigurosos
-- **Marco matemático completo** libre de circularidades críticas
-- **Predicciones observacionales específicas** cuantitativas
-- **Criterios de falsabilidad objetivos** con umbrales definidos
+**Estado**: Investigación científica activa  
+**Última actualización**: Junio 2026 (reorganización integral)  
+**Próxima fase**: Extensión a sistemas multi-cuerpo y preparación de manuscripto final
 
-### 🔄 **En Desarrollo**
-- **Validación numérica** mediante simulaciones 4D
-- **Análisis de datos existentes** (Planck, SDSS, supernovas)
-- **Preparación para nuevas observaciones** (Euclid, CMB-S4)
-
-### 📅 **Cronograma Futuro**
-- **2025-2027:** Tests iniciales con datos existentes
-- **2027-2030:** Caracterización detallada con nuevas observaciones
-- **2030-2035:** Decisión definitiva sobre validez del modelo
+**Licencia**: Disponible para uso académico y científico. Colaboraciones bienvenidas.
 
 ---
 
-## 📊 **Firmas Distintivas del Modelo**
+*"El universo es más extraño de lo que imaginamos, y más extraño de lo que podemos imaginar."*
 
-### **Características Únicas Predichas:**
-
-1. **Simetría cuádruple universal:**
-   - CMB: Patrones cos(4θ), cos(8θ) inexplicables por inflación
-   - Lensing: Anisotropía κ con la misma simetría
-   - Estructura: Correlaciones P₄(cos θ) direccionales
-
-2. **Escala física fundamental λ₄D = 1.53 Gpc:**
-   - Periodicidad en velocidades peculiares
-   - Transición en funciones de correlación
-   - Modulación de espectros de potencia
-
-3. **Eje preferencial multifenómeno:**
-   - Dirección común en CMB, estructura galáctica, y flujos coherentes
-   - Coordenadas específicas (l,b) = (264°, -29°)
-
-4. **Curvatura espacial negativa:**
-   - Ωₖ = -0.089 (único entre modelos alternativos)
-   - Conectada directamente con geometría S³
-
----
-
-## 🎯 **Impacto Científico Potencial**
-
-### **Si CONFIRMADO:**
-- **Revolución en cosmología fundamental**
-- **Unificación de materia/energía oscura** bajo un principio común
-- **Nuevos paradigmas** para gravedad cuántica y teorías de unificación
-- **Primera evidencia directa** de dimensiones espaciales extra
-
-### **Si REFUTADO:**
-- **Fortalecimiento del modelo ΛCDM** estándar
-- **Refinamiento de criterios** de falsabilidad en cosmología teórica
-- **Avances metodológicos** en análisis multi-observable
-
-### **Valor Independiente:**
-- **Protocolos rigurosos** para falsabilidad cosmológica establecidos
-- **Técnicas avanzadas** de análisis multi-observable desarrolladas
-- **Metodología transferible** a otros modelos teóricos emergentes
-
----
-
-## 📚 **Referencias Clave del Proyecto**
-
-### **Documentos Base:**
-- [`docs/conjetura_refundada.md`](../docs/conjetura_refundada.md) - Conceptos iniciales
-- [`docs/desarrollo_matematico_detallado_v2.md`](../docs/desarrollo_matematico_detallado_v2.md) - Desarrollo previo
-- [`docs/predicciones_observacionales_4d.md`](../docs/predicciones_observacionales_4d.md) - Predicciones específicas
-
-### **Sistema de Notación:**
-- **TF.X:** Ecuaciones de Fundamentos Teóricos
-- **MD.X:** Ecuaciones de Desarrollo Matemático  
-- **OCP.X:** Ecuaciones de Predicciones Observacionales
-- **G1, D1, O1:** Postulados fundamentales (Geométrico, Dinámico, Observacional)
-
----
-
-## 🔧 **Instrucciones de Uso**
-
-### **Para Investigadores:**
-1. **Comenzar con:** [`core_hypothesis.md`](01_theoretical_foundations/core_hypothesis.md) para fundamentos conceptuales
-2. **Continuar con:** [`4d_rotation_dynamics.md`](02_mathematical_development/4d_rotation_dynamics.md) para rigor matemático
-3. **Explorar predicciones:** [`cosmological_parameters.md`](04_observational_predictions/cosmological_parameters.md)
-4. **Verificación experimental:** [`falsifiability_criteria.md`](05_experimental_verification/falsifiability_criteria.md)
-
-### **Para Analistas de Datos:**
-- **Targets específicos** en predicciones observacionales
-- **Protocolos de análisis** en verificación experimental
-- **Algoritmos de búsqueda** para patrones 4D
-
-### **Para Teoristas:**
-- **Marco matemático completo** sin circularidades
-- **Extensiones posibles** hacia gravedad cuántica
-- **Conexiones** con otras teorías de dimensiones extra
-
----
-
-## 📜 **Licencia y Contribuciones**
-
-**Estado:** Proyecto de investigación académica  
-**Fecha de completitud de fase actual:** 27 de junio de 2025  
-**Próxima fase:** Validación experimental sistemática (2025-2035)
-
----
-
-*"El modelo del Universo Centrífugo representa un intento riguroso de resolver la crisis conceptual de la cosmología moderna mediante geometría hiperdimensional, ofreciendo predicciones específicas y falsables que permitirán su verificación objetiva durante la próxima década."*
+La Conjetura del Universo Centrífugo sugiere que vivimos en una estructura hiperdimensional cuya verdadera naturaleza apenas comenzamos a vislumbrar.

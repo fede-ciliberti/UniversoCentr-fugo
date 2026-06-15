@@ -60,6 +60,8 @@ $$H(z) = H_0 \sqrt{\Omega_m (1+z)^3 + \Omega_{rot} (1+z) + \Omega_k (1+z)^2}$$
 
 Donde el término rotacional decrece más lentamente ($\propto 1/R$) que la materia, dominando a épocas tardías y proporcionando un perfil de aceleración cosmológica diferenciable de ΛCDM.
 
+**Extensión DBI**: Para una formalización avanzada mediante la acción de Dirac-Born-Infeld (DBI) que reproduce dinámicamente la ecuación de estado $w = -1$ a partir de la saturación relativista de la tensión de brana en el Bulk, ver [`formalismo_dbi_energia_oscura.md`](formalismo_dbi_energia_oscura.md).
+
 ### 3.2. Anisotropías Cuádruples en el CMB
 Incluso con una rotación isoclínica altamente simétrica, las ligeras imperfecciones dinámicas de la brana en rotación dejarán una huella geométrica única de simetría cuádruple en el espectro de anisotropías del CMB, caracterizada por:
 

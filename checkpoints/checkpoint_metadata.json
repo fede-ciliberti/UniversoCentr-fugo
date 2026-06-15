@@ -1,0 +1,177 @@
+{
+  "checkpoints": {
+    "periodic": [
+      {
+        "step": 0,
+        "time": 0.01,
+        "timestamp": 1765755186.970983,
+        "filepath": "checkpoints/checkpoint_periodic_step_000000_1765755186.chk",
+        "checksum": "e78ba080e53cd3d5c04f25a26266d8925e475d0521976fa153ca8b71ffc91529",
+        "size_bytes": 381580,
+        "type": "periodic"
+      },
+      {
+        "step": 0,
+        "time": 0.01,
+        "timestamp": 1765755292.2367728,
+        "filepath": "checkpoints/checkpoint_periodic_step_000000_1765755292.chk",
+        "checksum": "b46305592d44021a13a5fb781aeef246342de309c2aa72db95fd1f48fa62c129",
+        "size_bytes": 381579,
+        "type": "periodic"
+      },
+      {
+        "step": 0,
+        "time": 0.01,
+        "timestamp": 1765755340.6115725,
+        "filepath": "checkpoints/checkpoint_periodic_step_000000_1765755340.chk",
+        "checksum": "e81a986d1f3fb196b4ffb4a7592bc5602d8708871dda67f8cc9b02ef3047d9e6",
+        "size_bytes": 381580,
+        "type": "periodic"
+      },
+      {
+        "step": 0,
+        "time": 0.01,
+        "timestamp": 1765755350.6877003,
+        "filepath": "checkpoints/checkpoint_periodic_step_000000_1765755350.chk",
+        "checksum": "9aeb8dd8d0f4b7b4790d91ee1afd3c73ddbf98318244401ff6c74b6bd6d20f48",
+        "size_bytes": 381577,
+        "type": "periodic"
+      },
+      {
+        "step": 50,
+        "time": 0.5100000000000002,
+        "timestamp": 1765755351.0891259,
+        "filepath": "checkpoints/checkpoint_periodic_step_000050_1765755351.chk",
+        "checksum": "92f2747da3afe37cbf4f4a103a0f8dafea5e9846cdd80c374686ef85ec5038cd",
+        "size_bytes": 401162,
+        "type": "periodic"
+      },
+      {
+        "step": 0,
+        "time": 0.001,
+        "timestamp": 1765755351.57709,
+        "filepath": "checkpoints/checkpoint_periodic_step_000000_1765755351.chk",
+        "checksum": "af4d9de96cc802fad8d7ce0abb7e7459cf6bbb3ead1598275bb49b86c1032e24",
+        "size_bytes": 375249,
+        "type": "periodic"
+      }
+    ],
+    "frequent": [
+      {
+        "step": 90,
+        "time": 0.9100000000000006,
+        "timestamp": 1765755351.424293,
+        "filepath": "checkpoints/checkpoint_frequent_step_000090_1765755351.chk",
+        "checksum": "8737c89e058b673534017eaa37317f1fb8e45fd85094f97b307cac5ba1dd49de",
+        "size_bytes": 404229,
+        "type": "frequent"
+      },
+      {
+        "step": 100,
+        "time": 0.10100000000000008,
+        "timestamp": 1765755351.9827442,
+        "filepath": "checkpoints/checkpoint_frequent_step_000100_1765755351.chk",
+        "checksum": "af4216484cf53e5bf75ed923460598d34c08399336175d783777cb9d6428ba1b",
+        "size_bytes": 392994,
+        "type": "frequent"
+      },
+      {
+        "step": 200,
+        "time": 0.20100000000000015,
+        "timestamp": 1765755352.4218035,
+        "filepath": "checkpoints/checkpoint_frequent_step_000200_1765755352.chk",
+        "checksum": "b51015ba070aaa2119d33796c9b870849889e0bd478fc136ab83f7adb1795af1",
+        "size_bytes": 396457,
+        "type": "frequent"
+      },
+      {
+        "step": 300,
+        "time": 0.3010000000000002,
+        "timestamp": 1765755352.8384788,
+        "filepath": "checkpoints/checkpoint_frequent_step_000300_1765755352.chk",
+        "checksum": "5ea25118b6494d371fd825ab35e69ae21bfc8454a4d17958e9fd16a6199a85c0",
+        "size_bytes": 398645,
+        "type": "frequent"
+      },
+      {
+        "step": 400,
+        "time": 0.4010000000000003,
+        "timestamp": 1765755353.2646706,
+        "filepath": "checkpoints/checkpoint_frequent_step_000400_1765755353.chk",
+        "checksum": "20654af72c7794248cbec904bccece3b85d36f7b81fd35e8d7687de5097615bf",
+        "size_bytes": 400197,
+        "type": "frequent"
+      },
+      {
+        "step": 500,
+        "time": 0.5010000000000003,
+        "timestamp": 1765755353.6699677,
+        "filepath": "checkpoints/checkpoint_frequent_step_000500_1765755353.chk",
+        "checksum": "8aad8fc526b27b3fe155e168a227a252259f7b4e2b7c2b036530aaddadf5852b",
+        "size_bytes": 401308,
+        "type": "frequent"
+      },
+      {
+        "step": 600,
+        "time": 0.6010000000000004,
+        "timestamp": 1765755354.0708127,
+        "filepath": "checkpoints/checkpoint_frequent_step_000600_1765755354.chk",
+        "checksum": "64c5485e948b2a6e864b32b8e6ef941bb8721a548163a922270b0e942cc1df79",
+        "size_bytes": 402070,
+        "type": "frequent"
+      },
+      {
+        "step": 700,
+        "time": 0.7010000000000005,
+        "timestamp": 1765755354.484561,
+        "filepath": "checkpoints/checkpoint_frequent_step_000700_1765755354.chk",
+        "checksum": "bded15b9c36528588847d994bf1339fc06e525c9f825fd611a272fc02dd8bd7d",
+        "size_bytes": 402991,
+        "type": "frequent"
+      },
+      {
+        "step": 800,
+        "time": 0.8010000000000006,
+        "timestamp": 1765755354.8888192,
+        "filepath": "checkpoints/checkpoint_frequent_step_000800_1765755354.chk",
+        "checksum": "fec5cfdd8dadcaaa2e3f9e1afb43207cfb368cf173a3329938315c38187faf87",
+        "size_bytes": 403448,
+        "type": "frequent"
+      },
+      {
+        "step": 900,
+        "time": 0.9010000000000007,
+        "timestamp": 1765755355.2917306,
+        "filepath": "checkpoints/checkpoint_frequent_step_000900_1765755355.chk",
+        "checksum": "f9cb7bbf987fadb451815782b2869c03de8c61be74b5599e4e25e5424c84ec07",
+        "size_bytes": 404198,
+        "type": "frequent"
+      }
+    ]
+  },
+  "last_checkpoint": {
+    "step": 900,
+    "time": 0.9010000000000007,
+    "timestamp": 1765755355.2917306,
+    "filepath": "checkpoints/checkpoint_frequent_step_000900_1765755355.chk",
+    "checksum": "f9cb7bbf987fadb451815782b2869c03de8c61be74b5599e4e25e5424c84ec07",
+    "size_bytes": 404198,
+    "type": "frequent"
+  },
+  "simulation_params": {
+    "dt": 0.001,
+    "t_final": 1.0,
+    "n_steps": 1000,
+    "grid_shape": [
+      32,
+      32,
+      32
+    ],
+    "dx": 0.6451612903225801,
+    "dy": 0.6451612903225801,
+    "dz": 0.6451612903225801,
+    "dissipation": 0.01,
+    "use_gpu": false,
+    "gpu_type": null
+  }
+}

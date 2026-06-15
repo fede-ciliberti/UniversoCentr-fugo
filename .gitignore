@@ -148,3 +148,18 @@ trash/
 # Archivos de datos pesados de simulación
 simulation_256cubed_data/
 *.dat
+
+# Artefactos de pip (errores de sintaxis =X.Y.Z)
+=*.*/
+
+# Backups y versiones anteriores
+*.backup
+*.original
+*.bak
+*~
+
+# Archivos temporales adicionales
+*.tmp
+*.temp
+# Config local de OpenCode (no commitear)
+.omo/

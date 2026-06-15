@@ -118,6 +118,14 @@ $$G_{eff} = \frac{c^2 L^2}{4 \pi M^2 T_0 R_0^3} = \text{Constante en el Tiempo C
 
 ---
 
+## 🔗 Extensión: Retroalimentación Masa-Vacío
+
+El tratamiento anterior asume que la masa inercial total $M$ del universo es constante. Sin embargo, dado que $E = mc^2$, **toda forma de energía contribuye al momento de inercia del Bulk**, incluyendo la energía del vacío (tensión de brana $T_3$). A medida que el universo se expande y se crea más espacio, la masa inercial total aumenta, lo que genera una retroalimentación no lineal en $\omega_{4D}(R)$.
+
+Para la derivación completa del acoplamiento dinámico entre la masa inercial variable y la velocidad angular cosmológica, incluyendo la resolución analítica y las implicaciones para la estabilidad de $G_{eff}$ en regímenes de alta expansión, ver [`acoplamiento_masa_inercia_centrifuga.md`](acoplamiento_masa_inercia_centrifuga.md).
+
+---
+
 ## 🔬 CONCLUSIÓN CIENTÍFICA
 
 La brillante hipótesis de Fede de incorporar la conservación del momento de inercia resuelve el problema de la variación secular de la gravedad de forma definitiva y elegante:

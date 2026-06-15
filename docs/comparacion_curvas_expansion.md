@@ -21,6 +21,8 @@ Un punto en nuestra brana 3-esférica que gira en el Bulk de cuatro dimensiones 
 
 Al incorporar tu corrección, Fede (que el giro decae por conservación del momento de inercia $\omega_{4D} \propto 1/R^2$), y nuestro modelo de dilución de la energía elástica ($T_b \propto 1/R^3$), la velocidad de expansión del universo adquiere componentes físicos que mapean con exactitud matemática asombrosa frente a la cosmología estándar.
 
+**Escala cosmológica**: El radio hiperdimensional $R_0 \approx 10^{26}$ m establece la escala de la 3-esfera. Para la derivación completa desde parámetros observacionales (constante de Hubble, velocidad de rotación 4D), ver [`calculo_radio_tamano_universo.md`](calculo_radio_tamano_universo.md).
+
 ---
 
 ## 📐 1. LA ECUACIÓN DE FRIEDMANN EMERGENTE EN EL UNIVERSO CENTRÍFUGO
@@ -59,6 +61,8 @@ Donde $a = R(t)/R_0$ es el factor de escala y el exponente $\alpha$ del término
     Al dividir por $R^2$, el término elástico escala como **$a^{-1}$** ($\alpha = 1$). Esto equivale a un fluido cosmológico con **$w = -2/3$**, que genera una expansión acelerada tardía.
 3.  **Caso No Lineal Dirac-Born-Infeld (DBI) y Modelo Híbrido ($w \approx -1$):**
     Para conciliar el modelo con los datos observacionales de Planck 2018 ($w = -1.03 \pm 0.03$), la brana requiere una acción altamente no lineal (tipo DBI) donde, para grandes factores de escala, la tensión efectiva tiende a estabilizarse en un valor constante $T_{\text{efectiva}} \approx \text{constante}$. Esto daría $V_{\text{elástica}} \propto R^3$, lo que al dividir por $R^2$ genera un término constante **$a^0$** ($\alpha = 0$), idéntico a una **constante cosmológica $\Lambda$ ($w = -1$)**. Alternativamente, aceptamos un modelo híbrido donde la rotación unifica la gravedad local y la materia oscura galáctica, mientras que la Energía Oscura posee un origen cuántico o cosmológico independiente.
+
+    **Extensión DBI completa**: Para la derivación rigurosa de la acción de Dirac-Born-Infeld aplicada a nuestra brana en rotación, incluyendo la métrica inducida, el factor de Lorentz del Bulk y la demostración de $w = -1$ asintótico, ver [`formalismo_dbi_energia_oscura.md`](formalismo_dbi_energia_oscura.md).
 
 ---
 

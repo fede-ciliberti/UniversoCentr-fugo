@@ -31,6 +31,8 @@ Donde:
 *   **$\psi$**: Es el ángulo polar hiperdimensional principal ($\psi \in [0, \pi]$). Define la posición angular respecto al eje de la cuarta dimensión ($w$).
 *   **$\theta, \phi$**: Son los ángulos polares estándar de un espacio 3D ($\theta \in [0, \pi]$, $\phi \in [0, 2\pi]$).
 
+**Valores numéricos y contribución del vacío**: Para el cálculo observacional de $R_0 \approx 10^{26}$ m y el volumen de la 3-esfera $V_{3D} = 2\pi^2 R_0^3$, ver [`calculo_radio_tamano_universo.md`](calculo_radio_tamano_universo.md). La energía del vacío (tensión de brana $T_3$) contribuye a la masa inercial total del universo, modificando la evolución de $\omega_{4D}(R)$; para el tratamiento completo del acoplamiento dinámico masa-vacío, ver [`acoplamiento_masa_inercia_centrifuga.md`](acoplamiento_masa_inercia_centrifuga.md).
+
 ### 2.2. Métrica de la 3-Esfera de Radio Variable
 
 La distancia infinitesimal de espacio-tiempo $ds^2$ sobre la superficie de la 3-esfera en expansión se describe, bajo esta parametrización consistente, por la métrica:

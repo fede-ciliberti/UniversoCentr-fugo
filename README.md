@@ -113,6 +113,16 @@ La teoría se basa en:
 | [`docs/informe_materia_oscura_elastica.md`](docs/informe_materia_oscura_elastica.md) | **Materia oscura elástica** — Curvas de rotación galáctica planas + discusión MOND/Bullet Cluster |
 | [`docs/plan_simulacion_elastica.md`](docs/plan_simulacion_elastica.md) | **Plan maestro** — Plan integral de simulación elástica de membrana |
 
+### 🔗 Documentación de Apoyo (Integrada en Junio 2026)
+
+Extensiones teóricas especializadas que complementan el cuerpo principal de documentación:
+
+| Archivo | Propósito | Relación con docs principales |
+|---------|-----------|-------------------------------|
+| [`docs/formalismo_dbi_energia_oscura.md`](docs/formalismo_dbi_energia_oscura.md) | **Energía oscura DBI** — Acción de Dirac-Born-Infeld para w=-1 dinámico | Extiende `02_propuesta_investigacion.md` §3 |
+| [`docs/acoplamiento_masa_inercia_centrifuga.md`](docs/acoplamiento_masa_inercia_centrifuga.md) | **Retroalimentación masa-vacío** — Contribución de la energía del vacío al momento angular | Extiende `conservacion_momento_inercia_geff.md` |
+| [`docs/calculo_radio_tamano_universo.md`](docs/calculo_radio_tamano_universo.md) | **Radio R₀ y volumen S³** — Cálculo observacional del tamaño del universo | Apoya `01_marco_teorico.md` §2 |
+
 ---
 
 ## 💻 Implementación Computacional
@@ -250,10 +260,13 @@ Consulta [`docs/02_propuesta_investigacion.md`](docs/02_propuesta_investigacion.
 
 ### ✅ Logros Completados
 
-1. **Marco teórico riguroso**: Formalismo matemático consistente
-2. **Simulaciones funcionales**: Sistema de simulación numérica completo
-3. **Predicciones específicas**: Criterios falsables definidos
-4. **Análisis crítico**: Identificación de fortalezas y limitaciones
+1. **Marco teórico riguroso**: Formalismo matemático consistente (docs 01-03)
+2. **Cambio de paradigma completado**: Transición BSSN → FFT espectral (junio 2026)
+3. **Solver FFT validado**: Correlación >99.8% contra Schwarzschild en 256³
+4. **Tests físicos implementados**: Precesión, lensing, materia oscura, expansión cosmológica
+5. **Reorganización integral**: Proyecto totalmente consistente (junio 2026)
+6. **Documentación de apoyo integrada**: 3 docs ex-huérfanos conectados a la red documental
+7. **Predicciones específicas**: Criterios falsables definidos y cuantitativos
 
 ### 🔄 En Desarrollo
 
@@ -298,11 +311,58 @@ Conjunto de scripts Python para verificación analítica independiente de los re
 
 ```
 UniversoCentrífugo/
-├── docs/                    # Documentación científica completa (21 archivos + subdirectorio)
-├── notebooks/               # Scripts de cálculo analítico y simulación numérica
-├── results/                 # Datos binarios de simulaciones (.npy, .npz)
-├── README.md                # Este archivo
-└── run_complete_simulation.py  # Script maestro de orquestación
+├── README.md                          # Este archivo
+├── requirements.txt                   # Dependencias Python
+│
+├── docs/                              # Documentación científica (27 archivos)
+│   ├── AGENTS.md                      # Índice de navegación
+│   ├── 01_marco_teorico.md → 12_*.md  # Serie numerada (lectura secuencial)
+│   ├── formulacion_matematica_*.md    # Formalismo especializado
+│   ├── informe_*.md                   # Informes temáticos
+│   ├── plan_simulacion_elastica.md    # Plan maestro de simulación
+│   └── simulacion_256cubed/           # Subdirectorio técnico (README_256cubed.md)
+│
+├── notebooks/                         # Scripts Python de simulación y análisis
+│   ├── AGENTS.md                      # Inventario de scripts
+│   ├── simulacion_membrana_elastica.py # Motor FFT principal
+│   ├── simulacion_*.py                # Motores de tests físicos
+│   ├── calculate_*.py                 # Cálculos teóricos
+│   └── setup_*.py                     # Setup y configuración
+│
+├── results/                           # Resultados de simulaciones
+│   ├── membrana_elastica/{32,64,128,256}cubed/
+│   ├── {curvas_expansion,estabilidad_gravedad,...}/
+│   ├── simulation_256cubed/           # Output completo 256³
+│   └── reports/                       # Reportes científicos
+│
+├── data/                              # Datos de entrada y configuración
+│   ├── configs/                       # JSONs de configuración
+│   ├── observational/                 # Catálogos galácticos (SPARC, Rotmod)
+│   └── initial_conditions/            # Datos iniciales .npz
+│
+├── checkpoints/                       # Estados de simulación serializados
+│
+├── scientific_publication/            # Manuscrito formal
+│   └── {01,02,04,05}_*/               # Secciones del paper
+│
+├── publication_strategy/              # Estrategia editorial
+│   └── target_analysis/journal_selection_analysis.md
+│
+├── simulation_256cubed_data/          # Legacy bulk data (~1.7GB, BSSN)
+│
+├── downloads/                         # Papers y referencias
+│   └── Modelos teóricos de un universo rotante.pdf
+│
+├── archive/                           # Material histórico/obsoleto
+│   ├── bssn_paradigm/                 # Documentación BSSN abandonada
+│   ├── audits/                        # Informes de auditoría
+│   ├── plans_legacy/                  # Planes viejos
+│   └── scripts_legacy/                # Scripts obsoletos
+│
+└── Entry Points de Raíz               # Scripts ejecutables principales
+    ├── run_complete_simulation.py
+    ├── run_256cubed_complete_pipeline.py
+    └── [otros runners y herramientas]
 ```
 
 ### Estándares de Contribución
@@ -318,7 +378,7 @@ UniversoCentrífugo/
 
 **Estado del Proyecto**: Investigación científica activa
 **Iniciado**: 19 de junio de 2025
-**Última actualización**: Junio 2026 (post-auditoría adversarial integral)
+**Última actualización**: Junio 2026 (reorganización integral + integración de docs de apoyo)
 
 **Licencia**: Disponible para uso académico y científico. Colaboraciones bienvenidas.
 
@@ -329,8 +389,9 @@ UniversoCentrífugo/
 Para preguntas, colaboraciones o reportar issues:
 
 1. **Documentación**: Consulta este README y archivos en `docs/`
-2. **Problemas técnicos**: Revisa `README_SIMULATION.md`
+2. **Problemas técnicos**: Revisa `notebooks/AGENTS.md` para inventario de scripts
 3. **Cálculos matemáticos**: Usa herramientas en `notebooks/`
+4. **Material histórico**: Ver `archive/` para documentación de paradigmas anteriores
 
 ---
 
