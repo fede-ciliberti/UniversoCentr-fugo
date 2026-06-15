@@ -1,0 +1,18 @@
+{
+  "grid_size": 256,
+  "chunk_size": 32,
+  "use_mixed_precision": true,
+  "memory_limit_gb": 24.520980834960938,
+  "available_cores": 12,
+  "available_memory_gb": 30.651226043701172,
+  "dt": 0.0005,
+  "t_final": 1.0,
+  "n_steps": 2000,
+  "output_every": 20,
+  "checkpoint_every": 100,
+  "dissipation": 0.005,
+  "dx": 0.078125,
+  "total_chunks": 512,
+  "estimated_runtime_hours": 10.619801044380361,
+  "timestamp": "2025-06-27 21:09:28"
+}

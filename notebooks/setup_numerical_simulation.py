@@ -227,7 +227,8 @@ def main():
         # 3. Definir parámetros físicos
         print("\n3. DEFINICIÓN DE PARÁMETROS FÍSICOS")
         R_param = 1.0       # Radio característico (unidades geométricas)
-        omega_4d_param = 0.1  # Velocidad angular 4D (ajustable)
+        omega_4d_param = 0.1  # Velocidad angular 4D instantánea local (ajustable).
+                               # Cosmológicamente ω₄D(t) ∝ 1/R(t)²; ver conservacion_momento_inercia_geff.md
         params = (R_param, omega_4d_param)
         
         print(f"   R = {R_param} (radio característico)")

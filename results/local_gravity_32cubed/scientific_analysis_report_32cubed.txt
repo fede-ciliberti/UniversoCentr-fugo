@@ -1,0 +1,34 @@
+REPORTE DE ANÁLISIS CIENTÍFICO
+==================================================
+Fecha: vie 27 jun 2025 15:36:55 -03
+Simulación: 32³ resolución
+Masa partícula: M = 0.5
+Tiempo simulación: t = 0.100
+Paso: 100
+
+PARÁMETROS DE ANÁLISIS
+-------------------------
+Rango radial: 0.5 < r < 8.0
+Constante G: 1.0
+
+ERRORES CUANTITATIVOS
+-------------------------
+Error RMS g_xx: 21.334525%
+Error máximo g_xx: 79.292291%
+Error medio g_yy: 20.049365%
+Error medio g_zz: 20.009556%
+
+TEST DE ISOTROPÍA
+-------------------------
+Error máximo isotropía: 0.049808%
+
+CRITERIOS DE VALIDACIÓN
+-------------------------
+Error g_xx < 1%: ✗
+Error g_yy < 1%: ✗
+Isotropía < 0.1%: ✓
+
+CONCLUSIÓN CIENTÍFICA
+-------------------------
+⚠️ PARCIAL: La métrica muestra características de Schwarzschild
+Algunos criterios requieren refinamiento o mayor resolución.

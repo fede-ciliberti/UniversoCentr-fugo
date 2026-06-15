@@ -1,0 +1,6 @@
+{
+  "chunk_size": 32,
+  "total_chunks": 512,
+  "workers": 12,
+  "improvement_factor": 12.0
+}

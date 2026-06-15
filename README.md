@@ -68,35 +68,50 @@ La teoría se basa en:
 
 ## 📚 Documentación Científica
 
-### 📖 Desarrollo Teórico Fundamental
+### 📖 Documentación Base (Lectura Secuencial 01-05)
 
 | Archivo | Propósito | Estado |
 |---------|-----------|--------|
-| [`docs/conjetura_teorica.md`](docs/conjetura_teorica.md) | **Análisis teórico completo** - Formulación rigurosa de toda la conjetura | ✅ Completo |
-| [`docs/conjetura_refundada.md`](docs/conjetura_refundada.md) | **Desarrollo paso a paso** - Construcción incremental sin circularidades | ✅ Completo |
-| [`docs/analisis_conjetura_refundada.md`](docs/analisis_conjetura_refundada.md) | **Análisis crítico científico** - Evaluación rigurosa de validez matemática | ✅ Completo |
+| [`docs/01_marco_teorico.md`](docs/01_marco_teorico.md) | **Marco teórico** — Brana S³ en ℝ⁴, Friedmann modificadas, densidad rotacional | ✅ Completo |
+| [`docs/02_propuesta_investigacion.md`](docs/02_propuesta_investigacion.md) | **Propuesta formal** — Hipótesis central, predicciones falsables, criterios de refutación | ✅ Completo |
+| [`docs/03_metodologia_gravedad_emergente.md`](docs/03_metodologia_gravedad_emergente.md) | **Gravedad emergente** — Derivación de gravedad newtoniana desde elasticidad de brana | ✅ Completo |
+| [`docs/04_metodologia_verificacion_gravedad.md`](docs/04_metodologia_verificacion_gravedad.md) | **Verificación** — Plan de verificación numérica del potencial gravitatorio | ✅ Completo |
+| [`docs/05_informe_simulacion_numerica.md`](docs/05_informe_simulacion_numerica.md) | **Primer informe FFT** — Solver espectral de membrana validado | ✅ Completo |
 
-### 🔬 Desarrollo Matemático Detallado
+### 🔬 Fase 2-3: Simulación de Gravedad Local (06-09)
 
 | Archivo | Enfoque | Contenido Clave |
 |---------|---------|-----------------|
-| [`docs/desarrollo_matematico_detallado.md`](docs/desarrollo_matematico_detallado.md) | **Problemas matemáticos críticos** | Identificación de inconsistencias y desarrollo necesario |
-| [`docs/desarrollo_matematico_detallado_v2.md`](docs/desarrollo_matematico_detallado_v2.md) | **Versión revisada** | Formalismo riguroso con rotaciones isoclínicas |
-| [`docs/desarrollo_matematico_gravedad_local.md`](docs/desarrollo_matematico_gravedad_local.md) | **Gravedad emergente** | Unificación de gravedad y expansión cosmológica |
+| [`docs/06_plan_simulacion_gravedad_local.md`](docs/06_plan_simulacion_gravedad_local.md) | **Plan detallado** | Especificaciones de simulación estática local |
+| [`docs/07_fase2_ejecucion_simulacion_completada.md`](docs/07_fase2_ejecucion_simulacion_completada.md) | **Ejecución completada** | Solver FFT validado hasta resolución 256³ |
+| [`docs/08_fase3_analisis_resultados_completada.md`](docs/08_fase3_analisis_resultados_completada.md) | **Análisis resultados** | Perfiles radiales vs métrica de Schwarzschild |
+| [`docs/09_informe_ejecutivo_gravedad_local.md`](docs/09_informe_ejecutivo_gravedad_local.md) | **Resumen ejecutivo** | Conclusiones de gravedad local emergente |
 
-### 🧪 Planes de Verificación
+### 🚀 Fase 4: Alta Resolución, Dinámica Relativista y Cosmología (10-12 + Temáticos)
 
-| Archivo | Metodología | Objetivo |
-|---------|-------------|----------|
-| [`docs/plan_desarrollo_gravedad_local.md`](docs/plan_desarrollo_gravedad_local.md) | **Desarrollo sistemático** | Demostrar que rotación 4D → gravedad local |
-| [`docs/plan_verificacion_aproximaciones.md`](docs/plan_verificacion_aproximaciones.md) | **Tres aproximaciones** | Verificar consistencia física paso a paso |
-| [`docs/predicciones_observacionales_4d.md`](docs/predicciones_observacionales_4d.md) | **Predicciones testables** | Experimentos específicos para validar/refutar |
+| Archivo | Enfoque | Contenido Clave |
+|---------|---------|-----------------|
+| [`docs/10_roadmap_alta_resolucion.md`](docs/10_roadmap_alta_resolucion.md) | **Roadmap** | Plan hacia simulaciones 512³ y 1024³ |
+| [`docs/11_plan_estrategico_256cubed_completo.md`](docs/11_plan_estrategico_256cubed_completo.md) | **Plan estratégico** | Estrategia completa para cubo 256³ |
+| [`docs/12_validacion_plan_256cubed_completado.md`](docs/12_validacion_plan_256cubed_completado.md) | **Validación** | Validación completada del plan 256³ |
 
-### 📊 Síntesis y Análisis
+### 🧮 Formulación Matemática Especializada
+
+| Archivo | Enfoque | Contenido Clave |
+|---------|---------|-----------------|
+| [`docs/formulacion_matematica_rotacion_4d.md`](docs/formulacion_matematica_rotacion_4d.md) | **Formalismo SO(4)** | Rotación isoclínica, tensor energía-momento, derivación analítica |
+| [`docs/ecuaciones_movimiento_rotacion_4d.md`](docs/ecuaciones_movimiento_rotacion_4d.md) | **Ecuaciones de movimiento** | Acoplamientos cinéticos α, β y fuerza de Coriolis 4D |
+| [`docs/conservacion_momento_inercia_geff.md`](docs/conservacion_momento_inercia_geff.md) | **Estabilidad de G_eff** | Conservación de momento angular → gravedad constante |
+| [`docs/comparacion_curvas_expansion.md`](docs/comparacion_curvas_expansion.md) | **Cosmología comparada** | Friedmann emergente vs ΛCDM, ecuación de estado |
+| [`docs/fuerza_coriolis_4d_trayectorias.md`](docs/fuerza_coriolis_4d_trayectorias.md) | **Lensing gravitacional** | Desvío de luz por Coriolis 4D, trazado de rayos |
+
+### 📋 Informes Temáticos
 
 | Archivo | Propósito |
 |---------|-----------|
-| [`docs/sintesis_analisis_rotacion_4d.md`](docs/sintesis_analisis_rotacion_4d.md) | **Resumen ejecutivo** - Síntesis completa con criterios de falsabilidad |
+| [`docs/informe_precesion_perihelio.md`](docs/informe_precesion_perihelio.md) | **Precesión orbital** — Simulación magnificada con calibración a Mercurio real (43"/siglo) |
+| [`docs/informe_materia_oscura_elastica.md`](docs/informe_materia_oscura_elastica.md) | **Materia oscura elástica** — Curvas de rotación galáctica planas + discusión MOND/Bullet Cluster |
+| [`docs/plan_simulacion_elastica.md`](docs/plan_simulacion_elastica.md) | **Plan maestro** — Plan integral de simulación elástica de membrana |
 
 ---
 
@@ -113,35 +128,32 @@ La teoría se basa en:
 | [`calculate_projected_tensor.py`](notebooks/calculate_projected_tensor.py) | Proyección 4D→3D del tensor | Tensor observable |
 | [`calculate_time_averaged_tensor.py`](notebooks/calculate_time_averaged_tensor.py) | Promedio temporal | Tensor estático efectivo |
 | [`solve_linearized_equations.py`](notebooks/solve_linearized_equations.py) | Ecuaciones Einstein linealizadas | Verificación potencial newtoniano |
+| [`simulacion_orbita_precesion.py`](notebooks/simulacion_orbita_precesion.py) | Simulador de órbitas relativistas | Simulación de la precesión del perihelio de Mercurio |
+| [`analisis_materia_oscura.py`](notebooks/analisis_materia_oscura.py) | Simulador de curvas de rotación | Curvas planas de rotación galáctica sin materia oscura |
+| [`simulacion_evolucion_temporal_geff.py`](notebooks/simulacion_evolucion_temporal_geff.py) | Simulador de estabilidad de G_eff | Estabilidad de G por conservación de momento inercial |
+| [`comparacion_curvas_expansion.py`](notebooks/comparacion_curvas_expansion.py) | Integrador cosmológico comparativo | Curvas de expansión R(t) de Universo Centrífugo vs. LCDM |
+| [`simulacion_desvio_luz_coriolis.py`](notebooks/simulacion_desvio_luz_coriolis.py) | Trazado de rayos y Lensing | Replicación del desvío doble de la luz de Einstein por Coriolis 4D |
 
 ### 🚀 Sistema de Simulación Numérica
 
-**Documentación completa**: [`README_SIMULATION.md`](README_SIMULATION.md)
+**Documentación completa**: [`docs/simulacion_256cubed/`](docs/simulacion_256cubed/)
 
 #### Scripts Principales
 
 | Script | Función | Uso |
 |--------|---------|-----|
-| [`run_complete_simulation.py`](run_complete_simulation.py) | **Script maestro** - Ejecuta todo el proceso | `python run_complete_simulation.py` |
-| [`run_optimized_simulation.py`](run_optimized_simulation.py) | **Simulación optimizada** para tu hardware | Generado automáticamente |
-
-#### Sistema de Soporte
-
-| Script | Propósito |
-|--------|-----------|
-| [`notebooks/install_simulation_deps.py`](notebooks/install_simulation_deps.py) | Instalador optimizado de dependencias |
-| [`notebooks/optimize_simulation_params.py`](notebooks/optimize_simulation_params.py) | Optimizador automático según hardware |
-| [`notebooks/setup_numerical_simulation.py`](notebooks/setup_numerical_simulation.py) | Generador de datos iniciales |
-| [`notebooks/run_numerical_simulation.py`](notebooks/run_numerical_simulation.py) | Motor de simulación principal (BSSN) |
-| [`notebooks/test_performance.py`](notebooks/test_performance.py) | Benchmark del sistema |
+| [`notebooks/simulacion_orbita_precesion.py`](notebooks/simulacion_orbita_precesion.py) | **Simulador de precesión orbital** | Precesión del perihelio con acoplamiento cinético α y Coriolis β |
+| [`notebooks/analisis_materia_oscura.py`](notebooks/analisis_materia_oscura.py) | **Simulador de curvas de rotación** | Curvas planas galácticas con aceleración inercial del Bulk |
+| [`notebooks/comparacion_curvas_expansion.py`](notebooks/comparacion_curvas_expansion.py) | **Integrador cosmológico** | Curvas R(t) Universo Centrífugo vs ΛCDM |
+| [`notebooks/simulacion_desvio_luz_coriolis.py`](notebooks/simulacion_desvio_luz_coriolis.py) | **Trazado de rayos** | Desvío gravitacional de luz por Coriolis 4D |
+| [`notebooks/simulacion_evolucion_temporal_geff.py`](notebooks/simulacion_evolucion_temporal_geff.py) | **Estabilidad de G_eff** | Conservación de momento angular en el Bulk |
 
 #### Características Técnicas
 
-- **Formalismo BSSN**: Estándar en relatividad numérica
-- **Paralelización masiva**: Multi-core automático con Numba JIT
-- **Optimización adaptativa**: Configuración automática según tu hardware
-- **Checkpoints**: Recuperación ante fallos
-- **Visualización en tiempo real**: Monitoreo de evolución de la métrica
+- **Solver FFT espectral de membrana**: Resolución de Poisson elástico mediante transformada rápida de Fourier
+- **Validación hasta 256³**: Perfiles radiales reproducen Schwarzschild con correlación >99.8%
+- **Cálculos matemáticos fundamentales**: Scripts de verificación analítica en `notebooks/`
+- **Paralelización adaptativa**: Optimización automática según hardware disponible
 
 ---
 
@@ -149,7 +161,7 @@ La teoría se basa en:
 
 ### Estrategia de Verificación en Tres Fases
 
-#### Fase 1: Análisis de Datos Existentes (2025-2027)
+#### Fase 1: Análisis de Datos Existentes (2026-2027)
 
 - **CMB (Planck/WMAP)**: Búsqueda de patrones cuádruples específicos
 - **Supernovas Tipo Ia**: Detección de variaciones direccionales en H₀
@@ -186,42 +198,36 @@ La teoría se basa en:
 
 ### Para Investigadores - Análisis Teórico
 
-1. **Lectura recomendada**:
+1. **Lectura recomendada (base)**:
 
    ```
-   docs/conjetura_teorica.md → docs/sintesis_analisis_rotacion_4d.md → docs/predicciones_observacionales_4d.md
+   docs/01_marco_teorico.md → docs/02_propuesta_investigacion.md → docs/03_metodologia_gravedad_emergente.md
    ```
 
-2. **Desarrollo matemático**:
+2. **Formulación matemática especializada**:
 
    ```
-   docs/desarrollo_matematico_detallado_v2.md → docs/desarrollo_matematico_gravedad_local.md
+   docs/formulacion_matematica_rotacion_4d.md → docs/ecuaciones_movimiento_rotacion_4d.md → docs/conservacion_momento_inercia_geff.md
    ```
 
-3. **Verificación experimental**:
+3. **Cosmología y tests observacionales**:
 
    ```
-   docs/plan_verificacion_aproximaciones.md → docs/predicciones_observacionales_4d.md
+   docs/comparacion_curvas_expansion.md → docs/informe_precesion_perihelio.md → docs/informe_materia_oscura_elastica.md
    ```
 
 ### Para Físicos Computacionales - Simulaciones
 
-1. **Simulación automática** (recomendado):
+1. **Simuladores temáticos** (recomendado):
 
    ```bash
-   python run_complete_simulation.py
+   python notebooks/simulacion_orbita_precesion.py        # Precesión perihelio
+   python notebooks/analisis_materia_oscura.py            # Curvas de rotación galáctica
+   python notebooks/comparacion_curvas_expansion.py       # Cosmología comparada
+   python notebooks/simulacion_desvio_luz_coriolis.py     # Lensing gravitacional
    ```
 
-2. **Simulación paso a paso**:
-
-   ```bash
-   python notebooks/install_simulation_deps.py
-   python notebooks/optimize_simulation_params.py
-   python notebooks/setup_numerical_simulation.py
-   python run_optimized_simulation.py
-   ```
-
-3. **Solo cálculos matemáticos**:
+2. **Cálculos matemáticos fundamentales**:
 
    ```bash
    cd notebooks/
@@ -232,11 +238,11 @@ La teoría se basa en:
 
 ### Para Observadores - Verificación Experimental
 
-Consulta [`docs/predicciones_observacionales_4d.md`](docs/predicciones_observacionales_4d.md) para:
+Consulta [`docs/02_propuesta_investigacion.md`](docs/02_propuesta_investigacion.md) (sección de criterios de falsabilidad) y [`docs/comparacion_curvas_expansion.md`](docs/comparacion_curvas_expansion.md) para:
 
-- Protocolos de búsqueda específicos
-- Algoritmos de análisis de datos
-- Criterios de detección y falsabilidad
+- Predicciones cosmológicas específicas del modelo
+- Comparación de curvas de expansión con ΛCDM
+- Criterios de detección y refutación observacional
 
 ---
 
@@ -257,25 +263,25 @@ Consulta [`docs/predicciones_observacionales_4d.md`](docs/predicciones_observaci
 
 ### 🎯 Próximos Hitos
 
-1. **Validación numérica completa** (Q3 2025)
-2. **Análisis de datos CMB** (Q4 2025)
-3. **Publicación científica** (Q1 2026)
+1. **Simulaciones de producción 512³** (Q3 2026)
+2. **Análisis comparativo vs datos CMB Planck** (Q4 2026)
+3. **Cálculo del espectro de potencias P(k)** (Q1 2027)
+4. **Extensión a regímenes de cúmulos galácticos (Bullet Cluster)** (Q2 2027)
 
 ---
 
 ## 🔧 Herramientas Adicionales
 
-### MCP-WolframAlpha
+### Scripts de Cálculo Analítico
 
-**Ubicación**: [`mcp-wolfram/`](mcp-wolfram/)
+**Ubicación**: [`notebooks/`](notebooks/)
 
-Servidor MCP integrado para cálculos matemáticos avanzados con WolframAlpha:
+Conjunto de scripts Python para verificación analítica independiente de los resultados numéricos:
 
-- Verificación independiente de cálculos
-- Visualizaciones matemáticas
-- Análisis simbólico complejo
-
-**Configuración**: Ver [`mcp-wolfram/README.md`](mcp-wolfram/README.md)
+- `calculate_4_velocity.py` — Vector velocidad 4D en rotación isoclínica
+- `calculate_stress_energy_tensor.py` — Tensor energía-momento $T^{\alpha\beta}$
+- `calculate_projected_tensor.py` — Proyección 4D→3D del tensor
+- `solve_linearized_equations.py` — Ecuaciones de Einstein linealizadas
 
 ---
 
@@ -292,12 +298,11 @@ Servidor MCP integrado para cálculos matemáticos avanzados con WolframAlpha:
 
 ```
 UniversoCentrífugo/
-├── docs/                    # Documentación científica completa
-├── notebooks/               # Scripts de cálculo y simulación
-├── mcp-wolfram/            # Herramientas de cálculo matemático
-├── README.md               # Este archivo
-├── README_SIMULATION.md    # Guía específica de simulaciones
-└── run_complete_simulation.py  # Script maestro
+├── docs/                    # Documentación científica completa (21 archivos + subdirectorio)
+├── notebooks/               # Scripts de cálculo analítico y simulación numérica
+├── results/                 # Datos binarios de simulaciones (.npy, .npz)
+├── README.md                # Este archivo
+└── run_complete_simulation.py  # Script maestro de orquestación
 ```
 
 ### Estándares de Contribución
@@ -313,7 +318,7 @@ UniversoCentrífugo/
 
 **Estado del Proyecto**: Investigación científica activa
 **Iniciado**: 19 de junio de 2025
-**Última actualización**: 26 de junio de 2025
+**Última actualización**: Junio 2026 (post-auditoría adversarial integral)
 
 **Licencia**: Disponible para uso académico y científico. Colaboraciones bienvenidas.
 

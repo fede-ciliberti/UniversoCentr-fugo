@@ -144,3 +144,7 @@ trash/
 # Archivos de configuración específicos que pueden contener datos sensibles
 *.env
 .env.*
+
+# Archivos de datos pesados de simulación
+simulation_256cubed_data/
+*.dat

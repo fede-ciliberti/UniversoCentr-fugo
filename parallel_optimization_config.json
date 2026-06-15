@@ -1,0 +1,9 @@
+{
+  "max_workers": 12,
+  "numba_threads": 12,
+  "chunk_size": 72,
+  "total_chunks": 27,
+  "chunks_per_core": 2.25,
+  "memory_mapping_flags": "MAP_POPULATE | MAP_HUGETLB",
+  "io_optimization": "async_checkpoints"
+}
