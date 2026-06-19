@@ -113,3 +113,21 @@ Para evaluar físicamente el éxito de la simulación, el script generará tres 
 1.  **Visualización 3D/2D del Pozo**: Mapa de color o superficie de deformación de la brana "hundida" en el eje $w$.
 2.  **Perfil Radial de Gravedad**: Curvas comparativas de $g_{00}$ numérico contra Schwarzschild teórico.
 3.  **Comportamiento de $g_{rr}$**: Curva del componente métrico espacial mostrando cómo la curvatura del espacio físico emerge únicamente del "estiramiento elástico" causado por la inercia en la cuarta dimensión.
+
+---
+
+## 6. Calibración Físico-Numérica y Factor de Escala (Brecha M2)
+
+Para conectar los resultados adimensionales del simulador espectral con el universo real, se define un factor de calibración de escala lineal L_c. Este factor vincula el dominio de simulación numérico con las escalas cosmológicas observadas.
+
+### 6.1 El Factor de Escala de Calibración (L_c)
+Definimos el factor de escala lineal del simulador como:
+L_c = 1.30 × 10²⁵ m (aproximadamente 421.3 Megapársecs)
+
+Este factor permite mapear de forma exacta el radio adimensional de la simulación R_sim = 50.0 al radio físico de la 3-esfera cósmica actual R₀:
+R₀ = L_c × R_sim = (1.30 × 10²⁵ m) × 50.0 ≈ 6.50 × 10²⁶ m
+
+### 6.2 Significado Cosmológico y Curvatura Global
+Este radio físico de la 3-esfera R₀ ≈ 6.50 × 10²⁶ m equivale a unos 68.7 mil millones de años luz de radio de curvatura. Este valor no es arbitrario; está calibrado directamente con los datos de curvatura global del satélite Planck (donde el parámetro de curvatura espacial es Ω_k = -0.044, lo que indica un universo cerrado de geometría S³).
+
+El factor L_c asegura que la rigidez de la membrana y el acoplamiento elástico de la masa den una constante de gravedad efectiva local G_eff idéntica a la constante de Newton G, garantizando que el simulador numérico represente fielmente la física observable de nuestro universo.

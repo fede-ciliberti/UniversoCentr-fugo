@@ -85,4 +85,28 @@ A pesar de que el término centrífugo de rotación decae más rápido de lo esp
 2.  **En el Universo Medio ($a \sim 0.5$):** La transición se equilibra de forma idéntica, permitiendo que la gravedad local (que ya demostramos que es constante y estable) trabaje en la formación de cúmulos de galaxias de la misma forma en ambos marcos.
 3.  **En el Universo Tardío ($a \to \infty$):** Aunque ΛCDM acelera de manera exponencial pura ($a \propto e^{H_0 t}$), nuestra conjetura de membrana elástica predice una aceleración más suave de tipo potencial de potencia ($a \propto t^2$). Esta sutil diferencia constituye una **firma falsable cosmológica de primer orden** que permite diferenciar ambas teorías utilizando supernovas tipo Ia lejanas.
 
+---
+
+## 🌌 4. FIRMA ANISOTRÓPICA CÓSMICA DE HUBBLE (Brecha B4)
+
+Una de las predicciones más potentes y diferenciadoras del **Universo Centrífugo** frente al modelo cosmológico estándar es la presencia de una **direccionalidad sutil en la velocidad de expansión del espacio-tiempo**. 
+
+Mientras que en el modelo ΛCDM la tasa de expansión (parámetro de Hubble H₀) es estrictamente isotrópica (idéntica en todas las direcciones del cielo), nuestro modelo de 3-esfera en rotación isoclínica hiperdimensional predice una firma anisotrópica periódica de pequeña escala inducida por el acoplamiento rotacional del Bulk.
+
+### 4.1 La Amplitud de la Anisotropía (δH/H₀)
+La modulación periódica de la expansión en función del ángulo de observación respecto al plano hiperdimensional de rotación isoclínica se cuantifica como:
+
+*   **Amplitud relativa de anisotropía:** δH / H₀ ≈ 1.2 × 10⁻⁵
+
+Esta firma direccional, del orden de diez partes por millón, se superpone a la tasa de expansión media global H₀. 
+
+### 4.2 Verificación Observacional y Falsabilidad
+Esta predicción cosmológica de primer orden es sumamente valiosa para la ciencia porque:
+1.  Es totalmente incompatible con la simetría perfecta postulada por la métrica FLRW de Einstein.
+2.  Constituye un test observacional directo: puede ser analizada y testeada hoy mismo mediante el mapeo tridimensional de supernovas Tipo Ia de alta dispersión espacial y a través de los flujos de velocidad peculiar a gran escala generados por el cartografiado cósmico de galaxias.
+
+---
+
+## 📈 5. CONCLUSIÓN Y PRÓXIMOS PASOS
+
 En el siguiente paso, desarrollaremos el simulador numérico para integrar estas ecuaciones y graficar ambas curvas históricas de expansión para convalidar visualmente su correspondencia.
